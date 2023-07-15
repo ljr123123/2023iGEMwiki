@@ -5,7 +5,7 @@
         :child_heading="masks"
         />
         <div class="main-home">
-            <img src="@/assets/png_icon/home-title.png" class="home-title-img"/>
+            <img src="https://static.igem.wiki/teams/4627/wiki/home-title.png" class="home-title-img"/>
             <div class="img-and-text slight">
                 <div class="png-text">
                     <p class="png-text-title" id="Previous Projects">Previous Projects</p>
@@ -27,31 +27,31 @@
                     <div class="png-text-title" id="Other Background">Other Background</div>
                     <div class="png-text-spe">
                         <p>According to the survey, global plastic production has increased 20-fold from 2.2 million tons in 1950 to 42.7 million tons in 2022. By 2050, global primary plastic production will reach 34 billion tons. However, only 9% of plastic produced is recycled. Random discarding leaves a large number of plastic into the environment, causing serious harm to animals and even humans ourselves. A U.S.-based study published in the journal Environmental Science & Technology in 2019 showed that people inhale or eat an average of more than 70,000 microplastic particles per year. Recent years,  microplastic was found in human blood and even feces. Although their harm to the human body is not yet known, it cannot be ignored. Therefore, it is urgent to find effective ways to degrade plastics.</p>
-                        <img src="@/assets/png_icon/1.png" class="text-png-small"/>
+                        <img src="https://static.igem.wiki/teams/4627/wiki/1.png" class="text-png-small"/>
                     </div>
                     <div class="png-text-spe">
                         <p>At present, there are two kinds of plastic degradation methods: physical method and chemical method. Physical method is to break down plastic into smaller molecules by physical means, including high temperature, high pressure, radiation, etc. The advantage of physical degradation method is fast speed and high efficiency, but it will cause high energy consumption. Chemical methods use chemical agents, such as acids and bases, to break down plastics into smaller molecules. The disadvantage of chemical degradation is that it will produce harmful substances and pollute the environment. The enzyme discovered recently solves the problems above by using biological method to degrade PE, and is a promising plastic degradation method.</p>
-                        <img src="@/assets/png_icon/2.png" class="text-png-small"/>
-                        <img src="@/assets/png_icon/3.png" class="text-png-small"/>
+                        <img src="https://static.igem.wiki/teams/4627/wiki/2.png" class="text-png-small"/>
+                        <img src="https://static.igem.wiki/teams/4627/wiki/3.png" class="text-png-small"/>
                     </div>
                     <div class="png-text-spe">
                         <p>Researches on PETase have been more and more mature gradually, while degrading enzyme for other kinds of plastics is still to be developed. We learned that polyethylene(PE) is a very widely used plastic, which usually used in food plastic bags, agricultural greenhouses and so on. However, high production and low recovery rate make PE a worldwide environmental pollution problem. Conventional degradation methods such as physical or chemical methods are not able to completely degrade PE. Their products are likely to be new pollutants that are difficult to degrade or toxic. In this case, biodegradation makes a more advantageous method. In 2016, scientists found that a class of PE degrading enzymes, PEase, in the larvae of wax borer, has the ability to oxidize PE at room temperature, successfully solving the recognized bottleneck step in PE degradation(i.e., oxidation). However, catalytic efficiency of PEase at room temperature is far from industrial demand. Therefore, we hope to optimize it by synthetic biology methords, thus improving catalytic efficiency of PEase. What's more, we learned that when the glass transition temperature (Tg) is about 78℃, internal molecular arrangement of PE will change, thus causing it easier to be degraded. Therefore, with change of structure, biodegradation is a better choice. However, thermostability of PEase currently is not ideal. So we hope to improve thermostability of PEase,  making it more efficient in degrading PE by the advantage of its denaturation.</p>
-                        <img src="@/assets/png_icon/4.png" class="text-png-small"/>
-                        <img src="@/assets/png_icon/5.png" class="text-png-small"/>
+                        <img src="https://static.igem.wiki/teams/4627/wiki/4.png" class="text-png-small"/>
+                        <img src="https://static.igem.wiki/teams/4627/wiki/5.png" class="text-png-small"/>
                     </div>
                     <div class="png-text-spe">
                         <p>After discussion, we take PEase as research object. We use a series of rational design methods to target mutant PEase, finally improving its thermal stability.</p>
                     </div>
             </div>
             <div class="img-and-text deeper">
-                <img src="@/assets/png_icon/6.png" class="text-png"/>
+                <img src="https://static.igem.wiki/teams/4627/wiki/6.png" class="text-png"/>
                 <div class="png-text">
                     <p class="png-text-title" id="Importance">Importance</p>
                     <p>Glass transition temperature(Tg) of PE is generally 78℃. Molecular arrangement of PE changes as the tempurate approaches Tg. Just like the thaw of frozen ice, PEis more likely to be degraded this moment. However, PEase can only react at room tempurate currently. Under this condition, degradation effect of PE is poor due to its tight molecular arrangement. Therefore, this year, TJUSLS-China aims to mutate PEase directedly through a serious of rational methords, thus obtaining mutants with high thermostability. Under the effect of high tempurate and function of PEase, degradation efficiency of PE is expected to be greatly improved. We use methods of synthetic biology to improve PEase's thermostability, which provides a new idea for treatments of PE.</p>
                 </div>
             </div>
             <div class="img-and-text slight">
-                <img src="@/assets/png_icon/7.png" class="text-png"/>
+                <img src="https://static.igem.wiki/teams/4627/wiki/7.png" class="text-png"/>
                 <div class="png-text">
                     <p class="png-text-title" id="Project">Project</p>
                     <p>We are committed to using methods of synthetic biology to directionally mutate PEase. Thermostability of PEase is expected to be improved while ensuring enzyme activity with two different schemes. Firstly, we use various software, such as FoldX, Alphafold, to screen, iterate and validate mutation points, thus obtaining potential mutants. Luckily, we have screened out 48 mutants currently. With the progress of modeling, we hope to select 60 mutants having the smallest ΔΔG for wet experiments. After construction, expression and purification, we will test their thermostability and enzyme activity. Our aim is to obtain PEase that can play a catalytic role at Tg, thus preliminarily achieving industrial application of PEase.</p>    
