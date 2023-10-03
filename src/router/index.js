@@ -1,17 +1,36 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import contributionView from "../views/ContributionView.vue"
+import descriptionView from "../views/DescriptionView.vue"
+import notebookView from "../views/NotebookView.vue"
+import attributionsView from "../views/attributionsView.vue"
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import("@/views/HomeView.vue"),
-    children:[
-      {
-        path:"",
-        name:"home-main",
-        component:() => import("@/pages/MainHome.vue")
-      }
-    ]
+    component: HomeView
+  },
+  {
+    path: "/contribution",
+    name: "contribution",
+    component: contributionView
+  },
+  {
+    path:"/description",
+    name:"description",
+    component:descriptionView
+  },
+  {
+    path:"/notebook",
+    name:"notebook",
+    component:notebookView
+  },
+  {
+    path:"/attributions",
+    name:"attributions",
+    component:attributionsView
   }
 ]
 
