@@ -18,18 +18,19 @@
       :style="{
         left: `${menuPosition}px`,
         opacity: `${menuOpacity}`,
+        maxHeight: `${menuHeight}px`,
       }"
       @mouseenter="moveEnterMenu"
       @mouseleave="hideMenu"
     >
-      <a
+      <div
         class="menu-item"
         v-for="(item, i) in menuItem"
         :key="i"
-        :href="item.path"
+        @click="toPath(item.path)"
       >
         {{ item.name }}
-      </a>
+      </div>
     </div>
   </div>
   <div class="header"></div>
@@ -116,13 +117,9 @@ export default {
   },
   methods: {
     moveMenu(event, i) {
+      let flag = false;
       if (this.showMenu === false) {
-        this.aniMenu = false;
-        setTimeout(() => {
-          this.aniMenu = true;
-        }, 500);
-      } else {
-        this.aniMenu = true;
+        flag = true;
       }
       this.showMenu = true;
       this.menuItem = this.router_box[i].sub_router || [];
@@ -130,8 +127,25 @@ export default {
       this.$nextTick(() => {
         const rect = event.target.getBoundingClientRect();
         const menuRect = this.$refs.menu.getBoundingClientRect();
-        this.menuOpacity = 1;
-        this.menuPosition = rect.left + rect.width / 2 - menuRect.width / 2;
+        if (flag) {
+          this.aniMenu = false;
+          this.showMenu = false;
+          this.$nextTick(() => {
+            this.menuPosition = rect.left + rect.width / 2 - menuRect.width / 2;
+            setTimeout(() => {
+              this.aniMenu = true;
+              this.showMenu = true;
+              this.$nextTick(() => {
+                this.menuOpacity = 1;
+                this.menuHeight = 400;
+              });
+            }, 0);
+          });
+        } else {
+          this.menuPosition = rect.left + rect.width / 2 - menuRect.width / 2;
+          this.menuOpacity = 1;
+          this.menuHeight = 400;
+        }
       });
     },
     toRoute(i) {
@@ -139,9 +153,20 @@ export default {
         this.router_box[i].path || this.router_box[i].sub_router[0].path || "/";
       this.$router.push(path);
     },
+    toPath(path) {
+      this.$router.push(path);
+      this.aniMenu = true;
+      this.menuOpacity = 0;
+      this.menuHeight = 0;
+      this.timer = setTimeout(() => {
+        this.showMenu = false;
+        this.aniMenu = false;
+      }, 500);
+    },
     moveEnterMenu() {
       setTimeout(() => {
         this.menuOpacity = 1;
+        this.menuHeight = 400;
         clearTimeout(this.timer);
         this.showMenu = true;
       }, 0);
@@ -149,6 +174,7 @@ export default {
     hideMenu() {
       this.aniMenu = true;
       this.menuOpacity = 0;
+      this.menuHeight = 0;
       this.timer = setTimeout(() => {
         this.showMenu = false;
         this.aniMenu = false;
@@ -168,7 +194,7 @@ export default {
   background: rgba(46, 78, 126);
   position: fixed;
   top: 0;
-    z-index:100;
+  z-index: 100;
   z-index: 998;
 }
 .header {
@@ -207,6 +233,8 @@ export default {
   border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
 }
 .menu-item {
   padding: 10px 15px;
