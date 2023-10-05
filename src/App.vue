@@ -10,9 +10,10 @@ import headerNav from "@/components/header-nav.vue"
 <style>
 body, html, #app{
     width:100vw;
-    margin:0;
 }
-p{
+*{
   margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica; 
 }
 </style>

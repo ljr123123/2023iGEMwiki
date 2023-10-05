@@ -69,11 +69,13 @@ const router_box =  reactive([
 <style scoped>
 .head-nav{
     height:10vh;
+    width:100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     background:rgba(46, 78, 126);
-    position: relative;
+    position: fixed;
+    top:0;
 }
 .team-logo{
     height:20vh;
