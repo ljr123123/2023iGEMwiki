@@ -66,7 +66,7 @@ p {
   font-family: Arial, Helvetica;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #fcfcfc;
   border-radius: 5px;
 }
 
@@ -79,25 +79,11 @@ p {
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   border-radius: 5px;
-  background: #ececec;
+  background: #8b8b8b;
   transition: color 0.2s ease;
 }
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  border-radius: 5px;
-  background: #ececec;
-  transition: color 0.2s ease;
+::-webkit-scrollbar-thumb:hover {
+  background: #636363;
 }
 .fade-enter-active,
 .fade-leave-active {
