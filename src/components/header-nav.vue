@@ -76,6 +76,7 @@ const router_box =  reactive([
     background:rgba(46, 78, 126);
     position: fixed;
     top:0;
+    z-index:100;
 }
 .team-logo{
     height:20vh;
@@ -100,9 +101,9 @@ const router_box =  reactive([
     top:100%;
     background:#FFFFFF;
     color:#000000;
-    z-index: 10;
     box-shadow: 0 0 1vh rgba(0, 0, 0, 0.5);
     border-radius: 1vh;
+    z-index:101;
 }
 .sub-router{
     margin: .7vh;
