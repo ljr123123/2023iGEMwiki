@@ -168,6 +168,7 @@ export default {
   background: rgba(46, 78, 126);
   position: fixed;
   top: 0;
+    z-index:100;
   z-index: 998;
 }
 .header {
