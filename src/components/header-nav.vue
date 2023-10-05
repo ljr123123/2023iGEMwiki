@@ -7,6 +7,7 @@
         v-for="(item, i) in router_box"
         :key="i"
         @mouseenter="(e) => moveMenu(e, i)"
+        @click="toRoute(i)"
       >
         <p class="router-name">{{ item.name }}</p>
       </div>
@@ -31,6 +32,7 @@
       </a>
     </div>
   </div>
+  <div class="header"></div>
 </template>
 
 <script>
@@ -67,6 +69,7 @@ export default {
         },
         {
           name: "Parts",
+          path: "/parts",
           sub_router: [],
           is_show: false,
         },
@@ -131,6 +134,11 @@ export default {
         this.menuPosition = rect.left + rect.width / 2 - menuRect.width / 2;
       });
     },
+    toRoute(i) {
+      let path =
+        this.router_box[i].path || this.router_box[i].sub_router[0].path || "/";
+      this.$router.push(path);
+    },
     moveEnterMenu() {
       setTimeout(() => {
         this.menuOpacity = 1;
@@ -161,6 +169,10 @@ export default {
   position: fixed;
   top: 0;
   z-index: 998;
+}
+.header {
+  width: 100%;
+  height: 70px;
 }
 .team-logo {
   width: 240px;
