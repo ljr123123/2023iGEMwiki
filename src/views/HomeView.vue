@@ -38,15 +38,64 @@
       <div class="echarts-box">
         <v-chart class="chart" :option="option" />
       </div>
-      <div class="echarts-box">
-        <v-chart class="chart" :option="option" />
-      </div>
       <img src="@/assets/muchAnimals.png" class="much-animals"/>
       <p class="simple-text short-text text-1">High production, low recycling rates and recalcitrance have made PE plastic pollution a global environmental problem.</p>
     </div>
-    <div class="main-box box-2"></div>
-    <div class="main-box box-3"></div>
-    <div class="main-box box-4"></div>
+    <div class="main-box box-2">
+      <div class="big-text-1">
+        <p>How to</p>
+        <p>deal with</p>
+        <p>PE pollution?</p>
+      </div>
+      <div class="liucheng-box">
+        <img src="@/assets/liucheng.png" class="liucheng"/>
+        <p class="desc-text text-3">Plastic recycling</p>
+        <p class="desc-text text-4">Plastic classification</p>
+        <p class="desc-text text-5">Physical degradation of PE</p>
+        <p class="desc-text text-6">Chemical degradation of PE</p>
+      </div>
+      <p class="simple-text text-7 short-text">Biodegradation of PE produce no harmful substances and has low energy consumption. And its secondary products are clean, safe, and more environmentally friendly.</p>
+      <div class="text-8">
+        <p>Thus</p>
+        <div>
+          Here comes
+        </div>
+      </div>
+    </div>
+    <div class="main-box box-3">
+      <p class="simple-text text-8 wide-text">
+        Although many microorganisms have been found,  PEase is the only enzyme that can degrade PE. PEase has the ability to oxidize PE at room temperature, successfully solving the recognized bottleneck step in PE degradation(i.e., oxidation).
+      </p>
+      <p class="simple-text text-9 wide-text">
+        When temperature rises, macromolecular chains inside PE are fully stretched, making it easier for O2 and PEase to entry and oxidize PE.                                                     However, at present, thermostability and catalytic efficiency of wild type PEase is low.
+      </p>
+      <img src="@/assets/carbon-struct.png" class="carbon-struct"/>
+    </div>
+    <div class="main-box box-4">
+      <p>However, at present, thermostability and catalytic efficiency of wild type PEase is low.</p>
+      <p>Therefore, we hope to improve the thermostability of PEase by directed evolution to increase its possibility to work at higher temperstures. This project may lay the foundation for achieving joint action of various plastic degrading enzymes in the future.</p>
+      <div class="video-box">
+        <p>See our promtion video</p>
+        <video></video>
+      </div>
+      <div class="more-info-box">
+        <div class="left-box">
+          <p>Contact us</p>
+          <div>
+            <img src=""/>
+            <p></p>
+          </div>
+          <div>
+            <img src=""/>
+            <p></p>
+          </div>
+          <div>
+            <img src=""/>
+            <img src=""/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -224,6 +273,11 @@ const option = {
 }
 .simple-text{
   color:#FFFFFF;
+  font-size:18px;
+}
+.desc-text{
+  font-size:16px;
+  color:#000000;
 }
 .text-1{
   position:absolute;
@@ -241,7 +295,7 @@ const option = {
   top:0vh;
   height:130vh;
 }
-.big-text{
+.big-text-1{
   font-size:50px;
   font-weight: bold;
   color:#FFFFFF;
@@ -253,5 +307,61 @@ const option = {
   position: absolute;
   left:5vw;
   top:10vh;
+}
+.liucheng-box{
+  height:55vh;
+  width:40vw;
+  background:#FFFFFF;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vh;
+  position: absolute;
+  right:5vw;
+  top:10vh;
+  box-shadow: 0 0 1vh #00000050;
+}
+.liucheng{
+  height:60vh;
+  margin-top:20vh;
+}
+.text-3{
+  position: absolute;
+  top:16vh;
+}
+.text-4{
+  position: absolute;
+  top:35vh;
+}
+.text-5{
+  position: absolute;
+  top:48vh;
+  left:1vw;
+}
+.text-6{
+  position: absolute;
+  top:48vh;
+  right:1vw;
+}
+.text-7{
+  position:absolute;
+  right:12.5vw;
+  top:70vh;
+}
+.text-8{
+  position:absolute;
+  right:10vw;
+  top:5vh;
+}
+.text-9{
+  position: absolute;
+  right: 10vw;
+  top:30vh;
+}
+.carbon-struct{
+  width:40vw;
+  position: absolute;
+  right:12.5vw;
+  top:50vh;
 }
 </style>
