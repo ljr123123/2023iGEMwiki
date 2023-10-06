@@ -172,7 +172,7 @@ const option = {
   background-image: url("../assets/background-1.png");
 }
 .box-2 {
-  background-image: url("../assets/background-2.PNG");
+  background-image: url("../assets/background-2.png");
 }
 .box-3 {
   background-image: url("../assets/background-3.png");
