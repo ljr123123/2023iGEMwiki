@@ -311,9 +311,5 @@
             }
          }
      }
-// import { reactive } from "vue"
 
-// const team_attributions = reactive([
-//     {name:"Zefang Wang", role:""}
-// ])
 </script>
