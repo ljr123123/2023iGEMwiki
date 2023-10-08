@@ -55,11 +55,11 @@
         <p class="desc-text text-6">Chemical degradation of PE</p>
       </div>
       <p class="simple-text text-7 short-text">Biodegradation of PE produce no harmful substances and has low energy consumption. And its secondary products are clean, safe, and more environmentally friendly.</p>
-      <div class="text-8">
-        <p>Thus</p>
-        <div>
-          Here comes
-        </div>
+      <div class="text-10">
+        <p class="big-text-2">Thus</p>
+        <p class="big-text-2">
+          Here comes PEase!
+        </p>
       </div>
     </div>
     <div class="main-box box-3">
@@ -70,6 +70,7 @@
         When temperature rises, macromolecular chains inside PE are fully stretched, making it easier for O2 and PEase to entry and oxidize PE.                                                     However, at present, thermostability and catalytic efficiency of wild type PEase is low.
       </p>
       <img src="@/assets/carbon-struct.png" class="carbon-struct"/>
+      <img src="@/assets/four-icons.png" class="four-icons"/>
     </div>
     <div class="main-box box-4">
       <p>However, at present, thermostability and catalytic efficiency of wild type PEase is low.</p>
@@ -153,6 +154,12 @@ const option = {
 </script>
 
 <style scoped>
+.four-icons{
+  position: absolute;
+  left:10vw;
+  top:-5vh;
+  height:100vh;
+}
 .home-view {
   width: 100%;
   display: flex;
@@ -257,6 +264,13 @@ const option = {
   position: absolute;
   left:5vw;
   top:10vh;
+}
+.big-text-2{
+  font-size:50px;
+  font-weight: bold;
+  color:#FFFFFF;
+  word-spacing: 30px;
+  margin:3vh;
 }
 .echarts-box{
   height:60vh;
@@ -363,5 +377,15 @@ const option = {
   position: absolute;
   right:12.5vw;
   top:50vh;
+}
+.text-10{
+  position:absolute;
+  bottom:10vh;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 </style>
