@@ -12,10 +12,43 @@
         </div>
 
         <div>
+            <div class="SmallTitle" style="font-size: 8vh">
+                Team Member Contributions 
+            </div>
+
+            <div class="introduction"> 
+                <table border="1px">
+                        <div class="options" v-for="item in productions" v-bind:key="item" >
+                            <tr>
+                                <td class="Name1">{{ item.Name }}</td>
+                                <td class="Role">{{ item.Role }}</td>
+                                <td class="GeneralTasks1">{{ item.GeneralTasks }}</td>
+                                <td class="SpecificTasks1">{{ item.SpecificTasks }}</td>
+                            </tr>
+                        </div> 
+                </table>
+            </div>
+            
+            <div class="SmallTitle" style="font-size: 8vh">
+                External Contributions
+            </div>
+            <div class="introduction">
+                <table border="1px">
+                    <div class="options" v-for="person in persons" v-bind:key="person" >
+                       <tr>
+                           <td class="Name2">{{ person.Name }}</td>
+                           <td class="InstitutionType">{{ person.InstitutionType }}</td>
+                           <td class="RelationshipToTeam">{{ person.RelationshipToTeam }}</td>
+                           <td class="GeneralTasks2">{{ person.GeneralTasks }}</td>
+                           <td class="SpecificTasks2">{{ person.SpecificTasks }}</td>
+                       </tr> 
+                    </div> 
+                </table>
+            </div>
+         </div>
             
         </div>
-        
-    </div>
+
 </template>
 
 <style>
@@ -26,8 +59,7 @@
 
     .introduction{
         float: left;
-        width: 60vw;
-        margin: 0 20vw 0 20vw;
+        margin: 0 10vw 0 10vw;
         font-size: 3vh;
         background-color: grey;
         border-radius: 20px;
@@ -51,11 +83,49 @@
     }
 
     .SmallTitle{
-        width: 22vw;
-        margin: 10vh 40vw 0vh 20vw;
+        margin: 10vh 50vw 0vh 10vw;
         font-size: 8vh;
         border-radius: 20px;
-    } 
+    }
+    
+    table{
+        width: 75vw;
+    }
+
+    .Name1{
+        width: 10vw;
+        text-align: center;
+    }
+    .Role{
+        width: 10vw;
+        text-align: center;
+    }
+    .GeneralTasks1{
+        width: 15vw;
+    }
+    .SpecificTasks1{
+        width: 39vw;
+    }
+
+    td{
+        padding: 2vh;
+    }
+
+    .Name2{
+        width: 15vw;
+    }
+    .InstitutionType{
+        width: 11vw;
+    }
+    .RelationshipToTeam{
+        width: 11vw;
+    }
+    .GeneralTasks2{
+        width: 15vw;
+    }
+    .SpecificTasks2{
+        width: 22vw;
+    }
 
 </style>
 
@@ -208,7 +278,7 @@
                         InstitutionType:"Industry",
                         RelationshipToTeam:"Contractor",
                         GeneralTasks:"Writing",
-                        SpecificTasks:" "
+                        SpecificTasks:"We used GPT-4 for the initial draft of writing our background and conclusion text. The references were verified and writing was fact-checked and edited by the team. "
                     },
                     {
                         Name:"Monad Biotech Co., Ltd.",
