@@ -61,9 +61,10 @@
         float: left;
         margin: 0 10vw 0 10vw;
         font-size: 3vh;
-        background-color: grey;
+        background-color: lightgrey;
         border-radius: 20px;
         padding: 5vh;
+        text-indent: 4vw;
     }
 
 
@@ -73,8 +74,9 @@
         width: 100%;
         padding: 5vh;
         font-size: 15vh;
+        font-style: ADLaM Display;
         text-align: center;
-        color: #0b4490;
+        font-weight:bold;
     }
 
     hr{
@@ -83,9 +85,10 @@
     }
 
     .SmallTitle{
-        margin: 10vh 50vw 0vh 10vw;
-        font-size: 8vh;
+        margin: 20vh 50vw 2vh 10vw;
+        font-size: 10vh;
         border-radius: 20px;
+        font-weight:bold;
     }
     
     table{
@@ -113,6 +116,7 @@
 
     .Name2{
         width: 15vw;
+        text-align: center;
     }
     .InstitutionType{
         width: 11vw;
