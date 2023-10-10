@@ -10,7 +10,7 @@
     />
     <div class="main-box box-1">
       <div class="text-box-1">
-        <p class="title-text">What is <strong>PE?</strong></p>
+        <img src="@/assets/What_is_PE.png" class="what-is-PE"/>
         <p class="simple-text wide-text">
           Polyethylene plastic (PE) can be seen everywhere in our lives, and is
           widely used in food plastic bags, agricultural greenhouses, pipes,
@@ -43,9 +43,7 @@
     </div>
     <div class="main-box box-2">
       <div class="big-text-1">
-        <p>How to</p>
-        <p>deal with</p>
-        <p>PE pollution?</p>
+        <img src="@/assets/PE_pollution.png" class="PE-pollution"/>
       </div>
       <div class="liucheng-box">
         <img src="@/assets/liucheng.png" class="liucheng"/>
@@ -154,6 +152,12 @@ const option = {
 </script>
 
 <style scoped>
+.PE-pollution{
+  height:55vh;
+}
+.what-is-PE{
+  height:50vh;
+}
 .four-icons{
   position: absolute;
   left:10vw;

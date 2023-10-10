@@ -23,8 +23,15 @@ const props = defineProps(["mainTitle", "subTitle", "textContent", "imageUrls"])
     color:rgb(101, 119, 254);
     font-size:25px;
     font-weight: bold;
+    margin:3vh;
+    margin-left:0;
 }
 .sub-title{
     color:rgb(101, 119, 254);
+}
+.simple-text{
+    font-size:15px;
+    margin:2vh;
+    margin-left:0;
 }
 </style>

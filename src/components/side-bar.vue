@@ -31,11 +31,11 @@
   }
   const sideBar = ref();
 
-  document.addEventListener("scroll", () => {
+  // document.addEventListener("scroll", () => {
     
-    if(yTop < imageHeight + navHeadHeight)
-    console.log(sideBar.value.getBoundingClientRect());
-  })
+  //   if(yTop < imageHeight + navHeadHeight)
+  //   console.log(sideBar.value.getBoundingClientRect());
+  // })
   </script>
   
   <style scoped>
