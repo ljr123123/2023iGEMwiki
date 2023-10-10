@@ -1,0 +1,30 @@
+<template>
+    <div class="text-with-image">
+        <p class="main-title">{{ props.mainTitle }}</p>
+        <p class="sub-title">{{ props.subTitle }}</p>
+        <p v-for="item in props.textContent" :key="item" class="simple-text">{{ item }}</p>
+        <img v-for="item in props.imageUrls" :key="item" :src="item" class="image"/>
+    </div>
+</template>
+
+<script setup>
+const props = defineProps(["mainTitle", "subTitle", "textContent", "imageUrls"]);
+
+
+</script>
+
+<style scoped>
+.text-with-image{
+    width:100%;
+    
+    background: #FFFFFF;
+}
+.main-title{
+    color:rgb(101, 119, 254);
+    font-size:25px;
+    font-weight: bold;
+}
+.sub-title{
+    color:rgb(101, 119, 254);
+}
+</style>
