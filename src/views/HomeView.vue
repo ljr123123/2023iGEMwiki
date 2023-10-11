@@ -10,7 +10,7 @@
     />
     <div class="main-box box-1">
       <div class="text-box-1">
-        <img src="@/assets/What_is_PE.png" class="what-is-PE"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/what-is-pe.png" class="what-is-PE"/>
         <p class="simple-text wide-text">
           Polyethylene plastic (PE) can be seen everywhere in our lives, and is
           widely used in food plastic bags, agricultural greenhouses, pipes,
@@ -43,7 +43,7 @@
     </div>
     <div class="main-box box-2">
       <div class="big-text-1">
-        <img src="@/assets/PE_pollution.png" class="PE-pollution"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/pe-pollution.png" class="PE-pollution"/>
       </div>
       <div class="liucheng-box">
         <img src="https://static.igem.wiki/teams/4627/wiki/blueliucheng.png" class="liucheng"/>

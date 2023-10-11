@@ -2,7 +2,7 @@
 <!-- eslint-disable vue/no-parsing-error -->
 <template>
   <div class="main">
-      <img src="@/assets/other-background.png" class="other-background"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/other-background.png" class="other-background"/>
     <SideBar heading="Overview" :child_heading="['Overview']"></SideBar>
     <div class="main-content">
       <TextWithImage

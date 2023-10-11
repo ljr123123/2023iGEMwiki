@@ -2,16 +2,16 @@
    <div class="game-panel">
     <div class="side-controller">
       <p>Your score: {{ score }}</p>
-      <img src="@/assets/start.svg" class="icon" @click="startGame()"/>
-      <img src="@/assets/stop.svg" class="icon" @click="stopGame()"/>
-      <img src="@/assets/refresh.svg" class="icon" @click="restartGame()"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/start.svg" class="icon" @click="startGame()"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/stop.svg" class="icon" @click="stopGame()"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/refresh.svg" class="icon" @click="restartGame()"/>
     </div>
     <div class="game-main" ref="gameMain">
-      <img v-for="(item) in plasticStyle" src="@/assets/plastic.jpg" class="plastic" ref="plastic" 
+      <img v-for="(item) in plasticStyle" src="https://static.igem.wiki/teams/4627/wiki/use-4.png" class="plastic" ref="plastic" 
       :style="item.content" :key="item"/>
-      <img v-for="item in boomStyle" src="@/assets/boom.svg" class="boom" :key="item"
+      <img v-for="item in boomStyle" src="https://static.igem.wiki/teams/4627/wiki/boom.svg" class="boom" :key="item"
       :style="item.content"/>
-      <img src="@/assets/enzyme.svg" class="enzyme" ref="enzyme" :style="enzymeStyle"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/enzyme.svg" class="enzyme" ref="enzyme" :style="enzymeStyle"/>
     </div>
   </div>
 </template>
@@ -77,7 +77,7 @@ function startGame(){
       && item.position.left > enzymeX - gameMainX - enzymeWidth
       && item.position.left < enzymeX - gameMainX + enzymeWidth){
         boomStyle.value.shift(item);
-        alert("你输了!");
+        alert("You lose!");
         stopGame();
       }
       item.position.top += 0.75;

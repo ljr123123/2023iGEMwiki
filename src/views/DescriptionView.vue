@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <img src="@/assets/other-background.png" class="other-background"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/other-background.png" class="other-background"/>
       <SideBar heading="experiments" :child_heading="{0:'experiments'}"></SideBar>
       <div class="main-content">
         <TextWithImage 
@@ -8,16 +8,65 @@
         :textContent="textContent1"></TextWithImage>
         <TextWithImage
         mainTitle="BACKGROUND"
-        :textContent="textContent2"></TextWithImage>
+        :textContent="textContent2"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/des-1.png'
+        ]"></TextWithImage>
         <TextWithImage
-        :textContent="textContent3"></TextWithImage>
+        :textContent="textContent3"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/phy-and-che.png'
+        ]"></TextWithImage>
         <TextWithImage
-        :textContent="textContent4"></TextWithImage>
+        :textContent="textContent4"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/pe-decrease.png'
+        ]"></TextWithImage>
         <TextWithImage
-        :textContent="textContent5"></TextWithImage>
+        :textContent="textContent5"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/success.png'
+        ]"></TextWithImage>
         <TextWithImage
         mainTitle="INSPIRATION"
         :textContent="textContent6"></TextWithImage>
+        <text-with-image
+        mainTitle="METHODS"
+        :textContent="[
+          'Based on literature materials, we learned four methods to improve the thermostability of enzymes, disulfide bond, salt bridge, hydrophobic cores, flexible sites.',
+        ]"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/four-options.png'
+        ]"></text-with-image>
+        <text-with-image
+        :textContent="[
+          'Firstly, protein structure visualization software such as PyMOL was used to analyze the unstable regions of PEase, and the corresponding sites were searched for point mutations.  In addition, according to hydrophobic cores, we calculated through RosettaDesign framework, identifying and improving hydrophobically packed protein cores by selecting a series of stabilizing point mutations. Then, protein structure prediction and analysis software such as AlphaFold2 and FoldX were used to evaluate the thermostability of the constructed mutants.',
+          'After rational design with four schemes, thousands of mutants were constructed. We superimposed the mutation sites in each round and calculated their theoretical thermostability. We hope to achieve better results by changing multiple mutational site at the same time, and obtain mutants with significantly improved thermostability.',
+          'Next, we selected 64 mutants for experimental validation. First, we found the most suitable plasmid vectors for Ceres and demetra respectively through pre experiment and used them in subsequent experiments. Then, we realized the construction of all mutant particles by seamless cloning. The correctly sequenced plasmid was transformed into E. coli BL21, and then expanded and induced to express PEase.',
+          'In order to obtain pure protein, we used affinity chromatography and tried to use ion exchange and molecular sieve for protein purification. Finally, Tm of PEase was measured by DSF, and the data were compared with wild type PEase to determine the thermostability of the mutant.',
+          'After obtaining good mutants, we also evaluated and verified the mutants by combining structural screening and molecular simulation technology, thus realizing the closed loop of design, build, test and learn.'
+        ]"
+        :imageUrls="[
+          'https://static.igem.wiki/teams/4627/wiki/lab-operation.png'
+        ]"></text-with-image>
+        <text-with-image
+        mainTitle="FUTURE PERISPECTIVE"
+        :textContent="[
+          'We hope to improve the environmental adaptability of PEase by improving its thermostability. And in future, increase of catalytic efficiency is expected to accelerate industrial application of PE biodegradation, which will greatly reduce the environmental pollution and energy consumption caused by physical and chemical methods. In addition, we know that PETase is able to be applied at 55 °C with high catalytic efficiency[9]. The improved thermostability of PEase may lay the foundation for achieving  joint action of various plastic degrading enzymes.'
+        ]"></text-with-image>
+        <text-with-image
+        mainTitle="REFERENCE"
+        :textContent="[
+          '[1] Harshvardhan K, Jha B. Biodegradation of low-density polyethylene by marine bacteria from pelagic waters, Arabian Sea, India. Mar Pollut Bull. 2013 Dec 15;77(1-2):100-6. doi: 10.1016/j.marpolbul.2013.10.025. Epub 2013 Nov 7. PMID: 24210946. ',
+          '[2] Álvarez-Hernández C, Cairós C, López-Darias J, Mazzetti E, Hernández-Sánchez C, González-Sálamo J, Hernández-Borges J. Microplastic debris in beaches of Tenerife (Canary Islands, Spain). Mar Pollut Bull. 2019 Sep;146:26-32. doi: 10.1016/j.marpolbul.2019.05.064. Epub 2019 Jun 5. PMID: 31426155',
+          '[3] Zhang Jinqing, Guo Ming, Zhang Yuanwen, Lin Han, Zhang Xingong. Research progress on cracking waste polyethylene plastics to produce fuel [J]. Petrochemical Technology, 2022,29 (10): 16-18.',
+          '[4] Sanluis-Verdes A, Colomer-Vidal P, Rodriguez-Ventura F, Bello-Villarino M, Spinola-Amilibia M, Ruiz-Lopez E, Illanes-Vicioso R, Castroviejo P, Aiese Cigliano R, Montoya M, Falabella P, Pesquera C, Gonzalez-Legarreta L, Arias-Palomo E, Solà M, Torroba T, Arias CF, Bertocchini F. Wax worm saliva and the enzymes therein are the key to polyethylene degradation by Galleria mellonella. Nat Commun. 2022 Oct 4;13(1):5568. doi: 10.1038/s41467-022-33127-w. PMID: 36195604; PMCID: PMC9532405.',
+          '[5] Zhang Y, Pedersen JN, Eser BE, Guo Z. Biodegradation of polyethylene and polystyrene: From microbial deterioration to enzyme discovery. Biotechnol Adv. 2022 Nov;60:107991. doi: 10.1016/j.biotechadv.2022.107991. Epub 2022 May 30. PMID: 35654281.',
+          '[6] Montazer Z, Habibi Najafi MB, Levin DB. Challenges with Verifying Microbial Degradation of Polyethylene. Polymers. 2020; 12(1):123.',
+          '[7] Rao Hori, Xu Weilin. Structure and mechanical properties of ultra-high molecular weight polyethylene fibers after heat treatment [J]. Progress in Textile Technology, 2008, (05): 9-11.',
+          '[8] Borgo B, Havranek JJ. Automated selection of stabilizing mutations in designed and natural proteins. Proc Natl Acad Sci U S A. 2012 Jan 31;109(5):1494-9. doi: 10.1073/pnas.1115172109. Epub 2012 Jan 17. PMID: 22307603; PMCID: PMC3277135.',
+          '[9] Deng B, Yue Y, Yang J, Yang M, Xing Q, Peng H, Wang F, Li M, Ma L, Zhai C. Improving the activity and thermostability of PETase from Ideonella sakaiensis through modulating its post-translational glycan modification. Commun Biol. 2023 Jan 13;6(1):39. doi: 10.1038/s42003-023-04413-0. PMID: 36639437; PMCID: PMC9839772.'
+        ]"></text-with-image>
       </div>
     </div>
   </template>
@@ -52,12 +101,21 @@
   
   <style scoped>
   .main{
-    width:100vw;
-    position: relative;
-  }
-  .main-content{
-    position: absolute;
-    width:85.2vw;
-    left:14.8vw;
-  }
+  width:100vw;
+  position: relative;
+}
+.main-content{
+  position: absolute;
+  width:85.2vw;
+  top:80vh;
+  left:14.8vw;
+  padding: 5vh;
+}
+.other-background{
+  width:100vw;
+  height:80vh;
+  position:absolute;
+  left:0;
+  top:0;
+}
   </style>

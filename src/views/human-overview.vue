@@ -1,7 +1,7 @@
 <!--tang-->
 <template>
   <div class="main">
-      <img src="@/assets/other-background.png" class="other-background"/>
+      <img src="https://static.igem.wiki/teams/4627/wiki/other-background.png" class="other-background"/>
     <div class="main-content">
       <img src="https://static.igem.wiki/teams/4627/wiki/hp.png" class="picture1"/>
       <TextWithImage
