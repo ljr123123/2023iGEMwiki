@@ -73,10 +73,45 @@
     <div class="main-box box-4">
       <p class="simple-text text-11">However, at present, thermostability and catalytic efficiency of wild type PEase is low.</p>
       <p class="simple-text text-12">Therefore, we hope to improve the thermostability of PEase by directed evolution to increase its possibility to work at higher temperstures. This project may lay the foundation for achieving joint action of various plastic degrading enzymes in the future.</p>
+      <div class="video-box">
+        <p class="simple-text">See our promtion video</p>
+        <iframe title="end" width="560" height="315" src="https://video.igem.org/videos/embed/58bbe307-f7b5-4cca-81c8-fd9c58c0ae38"></iframe>
+      </div>
       <div class="six-image-box">
         <img v-for="item in six_image" :key="item" :src="item" class="six-image"/>
       </div>
     </div>
+    <div class="bottom">
+    <div class="left-side">
+      <p class="contact-us">Contact Us</p>
+      <div class="line-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/location.png" class="small-icon"/>
+        <p class="simple-text-2"><strong>Address  </strong>China No.92 Weijin Road, Nankai District, Tianjin</p>
+      </div>
+      <div class="line-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/contact-us.png" class="small-icon"/>
+        <p class="simple-text-2"><strong>Email  </strong>tjusls_china@163.com</p>
+      </div>
+      <div class="line-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/wechat.png" class="small-icon"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/dou-yin.png" class="small-icon"/>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="school-logo-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/college-2.png" class="school-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/school-2.jpg" class="school-logo"/>
+      </div>
+      <div class="other-logo-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/genstar.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/idt.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/jin-wei-zhi-2.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/kang-run.png" class="other-logo"/>
+      </div>
+    </div>
+  </div>
+  <p class="copyrights">©2023-Content on this site is licensed under a Creative Commons Attributions 4.0 International license.</p>
+  <p class="copyrights"> The repository used to created this website is available at gitlab.igem.org/2023/tjusls-china</p>
   </div>
 </template>
 
@@ -99,12 +134,12 @@ use([
   LegendComponent
 ]);
 const six_image = [
-  "https://static.igem.wiki/teams/4627/wiki/huaman-practices.png",
-  "https://static.igem.wiki/teams/4627/wiki/judgeing.png",
-  "https://static.igem.wiki/teams/4627/wiki/model.png",
-  "https://static.igem.wiki/teams/4627/wiki/parts.png",
-  "https://static.igem.wiki/teams/4627/wiki/project.png",
-  "https://static.igem.wiki/teams/4627/wiki/team.png"
+  "https://static.igem.wiki/teams/4627/wiki/home-1.jpg",
+  "https://static.igem.wiki/teams/4627/wiki/home-2.jpg",
+  "https://static.igem.wiki/teams/4627/wiki/home-3.jpg",
+  "https://static.igem.wiki/teams/4627/wiki/home-4.jpg",
+  "https://static.igem.wiki/teams/4627/wiki/home-5.jpg",
+  "https://static.igem.wiki/teams/4627/wiki/home-6.jpg"
 ]
 const option = {
   title: {
@@ -141,6 +176,53 @@ const option = {
 </script>
 
 <style scoped>
+.copyrights{
+  padding:1vh;
+  background: #00000080;
+  color:#FFFFFF;
+}
+.school-logo-box{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-us{
+  padding-bottom:2vh;
+  font-size:20px;
+  font-weight: bold;
+}
+.bottom{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:2vh;
+}
+.left-side, .right-side{
+  display: flex;
+  flex-direction: column;
+  width:45vw;
+}
+.other-logo{
+  height:5vh;
+}
+.small-icon{
+  height: 5vh;
+}
+.school-logo{
+  height:10vh;
+}
+.line-box{
+  display: flex;
+  align-items: center;
+}
+.video-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .six-image-box{
   display: flex;
   flex-direction: row;
@@ -150,7 +232,8 @@ const option = {
   margin:10vh;
 }
 .six-image{
-  width:30%;
+  width:20%;
+  margin:5%;
 }
 .text-11, .text-12{
   margin:5vh;
