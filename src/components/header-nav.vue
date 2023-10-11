@@ -1,6 +1,6 @@
 <template>
   <div class="head-nav">
-    <img src="@/assets/team-logo.png" class="team-logo" />
+    <img src="https://static.igem.wiki/teams/4627/wiki/navigation.png" class="team-logo" />
     <div class="navbar" ref="navbar" @mouseleave="hideMenu">
       <div
         class="router-box"

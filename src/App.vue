@@ -4,6 +4,24 @@
   </transition>
   <header-nav />
   <router-view />
+  <div class="bottom">
+    <div class="left-side">
+      <p>Contact Us</p>
+      <div class="line-box">
+        <img src="" class="small-icon"/>
+        <p class="simple-text"></p>
+      </div>
+      <div class="line-box">
+        <img src="" class="small-icon"/>
+        <p class="simple-text"></p>
+      </div>
+      <div class="line-box">
+        <img src="" class="small-icon"/>
+        <img src="" class="small-icon"/>
+      </div>
+    </div>
+    <div class="right-side"></div>
+  </div>
 </template>
 
 <script>
