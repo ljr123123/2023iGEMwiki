@@ -46,7 +46,7 @@
         <img src="@/assets/PE_pollution.png" class="PE-pollution"/>
       </div>
       <div class="liucheng-box">
-        <img src="https://static.igem.wiki/teams/4627/wiki/bailiucheng.png" class="liucheng"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/blueliucheng.png" class="liucheng"/>
         <p class="desc-text text-3">Plastic recycling</p>
         <p class="desc-text text-4">Plastic classification</p>
         <p class="desc-text text-5">Physical degradation of PE</p>
@@ -73,10 +73,6 @@
     <div class="main-box box-4">
       <p class="simple-text text-11">However, at present, thermostability and catalytic efficiency of wild type PEase is low.</p>
       <p class="simple-text text-12">Therefore, we hope to improve the thermostability of PEase by directed evolution to increase its possibility to work at higher temperstures. This project may lay the foundation for achieving joint action of various plastic degrading enzymes in the future.</p>
-      <div class="video-box">
-        <p class="simple-text">See our promtion video</p>
-        <video></video>
-      </div>
       <div class="six-image-box">
         <img v-for="item in six_image" :key="item" :src="item" class="six-image"/>
       </div>
@@ -103,7 +99,12 @@ use([
   LegendComponent
 ]);
 const six_image = [
-  
+  "https://static.igem.wiki/teams/4627/wiki/huaman-practices.png",
+  "https://static.igem.wiki/teams/4627/wiki/judgeing.png",
+  "https://static.igem.wiki/teams/4627/wiki/model.png",
+  "https://static.igem.wiki/teams/4627/wiki/parts.png",
+  "https://static.igem.wiki/teams/4627/wiki/project.png",
+  "https://static.igem.wiki/teams/4627/wiki/team.png"
 ]
 const option = {
   title: {
@@ -140,6 +141,17 @@ const option = {
 </script>
 
 <style scoped>
+.six-image-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:80vw;
+  margin:10vh;
+}
+.six-image{
+  width:30%;
+}
 .text-11, .text-12{
   margin:5vh;
 }

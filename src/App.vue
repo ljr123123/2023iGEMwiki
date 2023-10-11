@@ -6,22 +6,36 @@
   <router-view />
   <div class="bottom">
     <div class="left-side">
-      <p>Contact Us</p>
+      <p class="contact-us">Contact Us</p>
       <div class="line-box">
-        <img src="" class="small-icon"/>
-        <p class="simple-text"></p>
+        <img src="https://static.igem.wiki/teams/4627/wiki/location.png" class="small-icon"/>
+        <p class="simple-text"><strong>Address  </strong>China No.92 Weijin Road, Nankai District, Tianjin</p>
       </div>
       <div class="line-box">
-        <img src="" class="small-icon"/>
-        <p class="simple-text"></p>
+        <img src="https://static.igem.wiki/teams/4627/wiki/contact-us.png" class="small-icon"/>
+        <p class="simple-text"><strong>Email  </strong>tjusls_china@163.com</p>
       </div>
       <div class="line-box">
-        <img src="" class="small-icon"/>
-        <img src="" class="small-icon"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/wechat.png" class="small-icon"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/dou-yin.png" class="small-icon"/>
       </div>
     </div>
-    <div class="right-side"></div>
+    <div class="right-side">
+      <div class="school-logo-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/college-logo.png" class="school-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/school-logo.png" class="school-logo"/>
+      </div>
+      <div class="other-logo-box">
+        <img src="https://static.igem.wiki/teams/4627/wiki/genstar.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/idt.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/jin-wei-zhi.png" class="other-logo"/>
+        <img src="https://static.igem.wiki/teams/4627/wiki/kang-run.png" class="other-logo"/>
+      </div>
+    </div>
   </div>
+  <p class="copyrights">©2023-Content on this site is licensed under a Creative Commons Attributions 4.0 International license.</p>
+  <p class="copyrights"> The repository used to created this website is available at gitlab.igem.org/2023/tjusls-china</p>
+  
 </template>
 
 <script>
@@ -63,6 +77,45 @@ export default {
 </script>
 
 <style>
+.copyrights{
+  padding:1vh;
+  background: #00000080;
+  color:#FFFFFF;
+}
+#app{
+  display: flex;
+  flex-direction: column;
+}
+.contact-us{
+  padding-bottom:2vh;
+  font-size:20px;
+  font-weight: bold;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:2vh;
+}
+.left-side, .right-side{
+  display: flex;
+  flex-direction: column;
+  width:45vw;
+}
+.other-logo{
+  height:5vh;
+}
+.small-icon{
+  height: 5vh;
+}
+.school-logo{
+  height:10vh;
+}
+.line-box{
+  display: flex;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
