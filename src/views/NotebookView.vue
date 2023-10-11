@@ -9,67 +9,6 @@
           'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
         ]"></TextWithImage>
         <p class="person-name" v-for="item in persons" :key="item">{{ item }}</p>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        <TextWithImage
-        mainTitle="Overview"
-        :textContent="[
-          'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.'
-        ]"></TextWithImage>
-        
       </div>
     </div>
   </template>
