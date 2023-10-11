@@ -1,3 +1,4 @@
+<!--tang-->
 <template>
   <div class="main">
       <img src="@/assets/other-background.png" class="other-background"/>
