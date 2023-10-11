@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <img src="@/assets/other-background.png" class="other-background"/>
     <SideBar heading="experiments" :child_heading="['experiments']"></SideBar>
     <div class="main-content">
       <TextWithImage 
@@ -25,6 +26,15 @@ import SideBar from "@/components/side-bar.vue"
 .main-content{
   position: absolute;
   width:85.2vw;
+  top:80vh;
   left:14.8vw;
+  padding: 5vh;
+}
+.other-background{
+  width:100vw;
+  height:80vh;
+  position:absolute;
+  left:0;
+  top:0;
 }
 </style>
