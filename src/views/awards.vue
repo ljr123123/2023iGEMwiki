@@ -1,5 +1,5 @@
 <template>
-  <div>这是Team Member页面</div>
+  <div>Please waiting for good news!</div>
 </template>
 
 <script>
