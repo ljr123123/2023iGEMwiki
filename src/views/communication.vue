@@ -15,36 +15,83 @@
       subTitle="1. Booth Promotion at Begonia Festival"
       :textContent="
         textContent2
-      "></TextWithImage>
+      "
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-1.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-2.jpg'
+      ]"></TextWithImage>
       <TextWithImage
       subTitle="2. Online Platforms"
-      :textContent="textContent3"></TextWithImage>
+      :textContent="textContent3"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-3.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-4.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-5.jpg'
+      ]"></TextWithImage>
       <TextWithImage
       subTitle="3. Mini-Game: Plastic-Eater!"
-      :textContent="textContent4"></TextWithImage>
+      :textContent="textContent4"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-6.jpg'
+      ]"></TextWithImage>
       <TextWithImage
       subTitle="4. Questionnaire Survey"
-      :textContent="textContent5"></TextWithImage>
+      :textContent="textContent5"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-7.jpg',
+      ]"></TextWithImage>
       <TextWithImage
       :textContent="[
         'Regarding current plastic disposal methods, more people believed that they contribute to environmental pollution. Our project offers a solution to this problem through environmentally friendly biodegradation. This survey result solidified our determination to carry out our project.'
+      ]"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-8.jpg'
       ]"></TextWithImage>
       <TextWithImage
       :textContent="[
         'Lastly, people had high expectations for us. The word cloud below illustrates the contributions that survey respondents hope university students can make in the future. The entire survey was conducted anonymously to protect personal privacy.'
+      ]"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-9.jpg'
       ]"></TextWithImage>
       <TextWithImage
       mainTitle="EDUCATION"
       subTitle="1. Debate!"
-      :textContent="textContent6"></TextWithImage>
+      :textContent="textContent6"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-10.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-11.jpg'
+      ]"></TextWithImage>
       <TextWithImage
       subTitle="2. Elementary School Kids"
-      :textContent="textContent7"></TextWithImage>
+      :textContent="textContent7"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-12.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-13.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-14.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-15.jpg'
+      ]"></TextWithImage>
+      <iframe src="https://static.igem.wiki/teams/4627/wiki/color-magic.pdf"></iframe>
       <TextWithImage
       subTitle="3. Xinzhuang Middle School & Fengyu No.1 High School"
-      :textContent="textContent8"></TextWithImage>
+      :textContent="textContent8"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-16.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-17.jpg'
+      ]"></TextWithImage>
       <TextWithImage
       :textContent="textContent9"></TextWithImage>
+      <iframe src="https://static.igem.wiki/teams/4627/wiki/animalbehaviour.pdf"></iframe>
+      <iframe src=""></iframe>
+      <TextWithImage
+      :subTitle="'4. University Lecture'"
+      :textContent="[
+        'In September 2022, we held an iGEM lecture for the entire university. During the lecture, we introduced past projects and invited responsible teachers and former team members to share their experiences. To boost enthusiasm, we designed a quiz game related to synthetic biology and created related cultural and creative prizes. We hoped that more and more people would appreciate the charm of synthetic biology and join the iGEM team!'
+      ]"
+      :imageUrls="[
+        'https://static.igem.wiki/teams/4627/wiki/communication-19.jpg',
+        'https://static.igem.wiki/teams/4627/wiki/communication-20.jpg'
+      ]"></TextWithImage>
     </div>
   </div>
 </template>
@@ -90,6 +137,10 @@ const textContent9 = [
 </script>
 
 <style scoped>
+iframe{
+  height:150vh;
+  width:80vw;
+}
 .main{
   width:100vw;
   position: relative;
