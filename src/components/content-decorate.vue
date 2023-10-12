@@ -45,7 +45,7 @@ const handleScroll = () => {
     const anchor = document.getElementById(item);
     if (anchor) {
       const rect = anchor.getBoundingClientRect();
-      if (rect.top > 0) {
+      if (rect.top >= -1) {
         activeItem.value = item;
         break;
       }
@@ -141,7 +141,7 @@ const handleImageLoad = () => {
 .side-bar {
   width: 20%;
   position: sticky;
-  top: 200px;
+  top: 140px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

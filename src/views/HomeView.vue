@@ -142,78 +142,6 @@
         />
       </div>
     </div>
-    <div class="bottom">
-      <div class="left-side">
-        <p class="contact-us">Contact Us</p>
-        <div class="line-box">
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/location.png"
-            class="small-icon"
-          />
-          <p class="simple-text-2">
-            <strong>Address </strong>China No.92 Weijin Road, Nankai District,
-            Tianjin
-          </p>
-        </div>
-        <div class="line-box">
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/contact-us.png"
-            class="small-icon"
-          />
-          <p class="simple-text-2">
-            <strong>Email </strong>tjusls_china@163.com
-          </p>
-        </div>
-        <div class="line-box">
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/wechat.png"
-            class="small-icon"
-          />
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/dou-yin.png"
-            class="small-icon"
-          />
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="school-logo-box">
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/college-2.png"
-            class="school-logo"
-          />
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/school-2.jpg"
-            class="school-logo"
-          />
-        </div>
-        <div class="other-logo-box">
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/genstar.png"
-            class="other-logo"
-          />
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/idt.png"
-            class="other-logo"
-          />
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/jin-wei-zhi-2.png"
-            class="other-logo"
-          />
-          <img
-            src="https://static.igem.wiki/teams/4627/wiki/kang-run.png"
-            class="other-logo"
-          />
-        </div>
-      </div>
-    </div>
-    <p class="copyrights">
-      ©2023-Content on this site is licensed under a Creative Commons
-      Attributions 4.0 International license.
-    </p>
-    <p class="copyrights">
-      The repository used to created this website is available at
-      gitlab.igem.org/2023/tjusls-china
-    </p>
   </div>
 </template>
 
@@ -278,48 +206,6 @@ const option = {
 </script>
 
 <style scoped>
-.copyrights {
-  padding: 1vh;
-  background: #00000080;
-  color: #ffffff;
-}
-.school-logo-box {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.contact-us {
-  padding-bottom: 2vh;
-  font-size: 20px;
-  font-weight: bold;
-}
-.bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 2vh;
-}
-.left-side,
-.right-side {
-  display: flex;
-  flex-direction: column;
-  width: 45vw;
-}
-.other-logo {
-  height: 5vh;
-}
-.small-icon {
-  height: 5vh;
-}
-.school-logo {
-  height: 10vh;
-}
-.line-box {
-  display: flex;
-  align-items: center;
-}
 .video-box {
   display: flex;
   flex-direction: column;
@@ -336,9 +222,9 @@ const option = {
 .six-image {
   width: 20%;
   margin: 5%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.six-image:hover{
+.six-image:hover {
   transform: scale(1.1, 1.1);
   box-shadow: 0 0 1vh #00000050;
 }
