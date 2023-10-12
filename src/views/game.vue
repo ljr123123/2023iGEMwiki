@@ -205,7 +205,7 @@ p {
   background: rgba(255, 0, 0, 0.1);
 }
 .game-main {
-  height: 80vh;
+  height: 100vh;
   width: 70vw;
   background: rgba(172, 255, 47, 0.1);
   position: relative;

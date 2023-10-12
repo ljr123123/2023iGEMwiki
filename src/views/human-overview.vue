@@ -56,7 +56,7 @@ const textContent5 = [
 }
 .other-background {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
