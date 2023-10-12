@@ -36,6 +36,9 @@ const activeItem = ref(props.navigation[0]);
 onMounted(() => {
   bus.on("imageLoaded", handleImageLoad);
   window.addEventListener("scroll", handleScroll);
+  setTimeout(() => {
+    bus.emit("imageLoaded");
+  }, 1000);
 });
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
