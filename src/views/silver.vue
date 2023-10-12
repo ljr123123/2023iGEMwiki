@@ -19,15 +19,24 @@
       ]"></text-with-image>
     </content-decorate>
   </div>
+  <div class="main">
+    <img
+      src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
+      class="other-background"
+    />
+    <div class="page-title">Silver</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
+    </content-decorate>
+  </div>
 </template>
 
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue"
 import ContentDecorate from "@/components/content-decorate.vue"
-const navigation = [
+export const navigation = [
 ]
 </script>
-
+  
 <style scoped>
 .main {
   width: 100%;

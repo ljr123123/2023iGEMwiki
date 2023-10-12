@@ -5,24 +5,26 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">safety</div>
+    <div class="page-title">Safety</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
-      <TextWithImage 
-      mainTitle="OVERVIEW"
-      aid="overview"
-      :textContent="textContent1"> </TextWithImage>
-      <TextWithImage mainTitle="Personnel Training" 
-      aid="training"
-      :textContent="textContent2">
+      <TextWithImage
+        mainTitle="OVERVIEW"
+        aid="overview"
+        :textContent="textContent1"
+      >
+      </TextWithImage>
+      <TextWithImage
+        mainTitle="Personnel Training"
+        aid="training"
+        :textContent="textContent2"
+      >
       </TextWithImage>
       <img
         src="https://static.igem.wiki/teams/4627/wiki/safety1.jpg"
         class="picture1"
       />
       <TextWithImage :textContent="textContent3"> </TextWithImage>
-      <TextWithImage mainTitle="Project safety"
-      aid="project"
-      > </TextWithImage>
+      <TextWithImage mainTitle="Project safety" aid="project"> </TextWithImage>
       <TextWithImage subTitle="1.Protein safety: " :textContent="textContent4">
       </TextWithImage>
       <TextWithImage subTitle="2.Strain safety:" :textContent="textContent5">
@@ -32,9 +34,11 @@
         :textContent="textContent6"
       >
       </TextWithImage>
-      <TextWithImage mainTitle=" Laboratory Safety" 
-      aid="laboratory"
-      :textContent="textContent7">
+      <TextWithImage
+        mainTitle=" Laboratory Safety"
+        aid="laboratory"
+        :textContent="textContent7"
+      >
       </TextWithImage>
 
       <TextWithImage
@@ -82,18 +86,22 @@
         class="picture2"
       />
 
-      <TextWithImage mainTitle="Human-practice" 
-      aid="hp"
-      :textContent="textContent12">
+      <TextWithImage
+        mainTitle="Human-practice"
+        aid="hp"
+        :textContent="textContent12"
+      >
       </TextWithImage>
       <img
         src="https://static.igem.wiki/teams/4627/wiki/safety8.jpg"
         class="picture1"
       />
 
-      <TextWithImage mainTitle="Reference" 
-      aid="reference"
-      :textContent="textContent13">
+      <TextWithImage
+        mainTitle="Reference"
+        aid="reference"
+        :textContent="textContent13"
+      >
       </TextWithImage>
       <TextWithImage :textContent="textContent14"> </TextWithImage>
       <TextWithImage :textContent="textContent15"> </TextWithImage>
@@ -165,8 +173,8 @@ const navigation = [
   "project",
   "laboratory",
   "hp",
-  "refrernce"
-]
+  "refrernce",
+];
 </script>
 
 <style scoped>

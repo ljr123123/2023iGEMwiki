@@ -4,6 +4,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
+    <div class="page-title">Experiments</div>
     <SideBar heading="experiments" :child_heading="['experiments']"></SideBar>
     <div class="main-content">
       <TextWithImage
@@ -31,14 +32,14 @@ import SideBar from "@/components/side-bar.vue";
 }
 .main-content {
   position: absolute;
-  width: 85.2vw;
+  width: 85.2%;
   top: 80vh;
   left: 14.8vw;
   padding: 5vh;
 }
 .other-background {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
@@ -46,5 +47,18 @@ import SideBar from "@/components/side-bar.vue";
 iframe {
   height: 100vh;
   width: 80vw;
+}
+.page-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
 }
 </style>

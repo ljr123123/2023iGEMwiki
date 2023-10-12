@@ -39,7 +39,7 @@ import ContentDecorate from "@/components/content-decorate.vue"
 const navigation = [
 ]
 </script>
-
+  
 <style scoped>
 .main {
   width: 100%;
