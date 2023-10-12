@@ -3,9 +3,12 @@
     <div class="anchor-point" :id="props.aid || props.mainTitle"></div>
     <p class="main-title">{{ props.mainTitle }}</p>
     <p class="sub-title">{{ props.subTitle }}</p>
-    <p v-for="item in props.textContent" :key="item" class="simple-text">
-      {{ item }}
-    </p>
+    <p
+      v-for="item in props.textContent"
+      :key="item"
+      class="simple-text"
+      v-html="item"
+    ></p>
     <img
       v-for="item in props.imageUrls"
       :key="item"

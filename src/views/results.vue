@@ -9,9 +9,7 @@
       <text-with-image
         main-title="Overview"
         aid="overview"
-        :text-content="[
-          'In our project, we focused on improving the thermostability of PEase (Ceres) by designing disulfide bonds, flexible sites, salt Bridges, and hydrophobic cores. A total of 64 PEase (Ceres) expression vectors were constructed, among which 35 mutants successfully expressed proteins, and after detecting their Tm values by real-time fluorescent quantitative PCR, we finally confirmed 5 of them that showed satisfactory results. They are W45C-F112C(BBa_K4627008)、H189C-R485C(BBa_K4627026)、Q169L-H174Y-T192W-W194Y-T200L-E201P-V380Y-D625F-H627K-G629P(BBa_K4627044)、V123I(BBa_K4627048)、A567F(BBa_K4627053).',
-        ]"
+        :text-content="textContent"
       ></text-with-image>
       <text-with-image
         main-title="2.Construction of pET-22b(+) expression vector"
@@ -116,6 +114,9 @@
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
 import ContentDecorate from "@/components/content-decorate.vue";
+const textContent = [
+  'In our project, we focused on improving the thermostability of PEase (Ceres) by designing disulfide bonds, flexible sites, salt Bridges, and hydrophobic cores. A total of 64 PEase (Ceres) expression vectors were constructed, among which 35 mutants successfully expressed proteins, and after detecting their Tm values by real-time fluorescent quantitative PCR, we finally confirmed 5 of them that showed satisfactory results. They are <a href="http://parts.igem.org/Part:BBa_K4627008" target="_blank">W45C-F112C(BBa_K4627008)</a>、<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">H189C-R485C(BBa_K4627026)</a>、<a href="http://parts.igem.org/Part:BBa_K4627044" target="_blank">Q169L-H174Y-T192W-W194Y-T200L-E201P-V380Y-D625F-H627K-G629P(BBa_K4627044)</a>、<a href="http://parts.igem.org/Part:BBa_K4627048" target="_blank">V123I(BBa_K4627048)</a>、<a href="http://parts.igem.org/Part:BBa_K4627053" target="_blank">A567F(BBa_K4627053)</a>.',
+];
 const navigation = ["overview", "conclusion", "future", "reference"];
 </script>
   
