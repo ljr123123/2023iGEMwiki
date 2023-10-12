@@ -4,7 +4,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">design</div>
+    <div class="page-title">Design</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
@@ -80,26 +80,52 @@
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/model-2.png']"
       ></TextWithImage>
       <TextWithImage
-      aid="results"
+        aid="results"
         :text-content="[
           'We finally selected 64 mutants for subsequent experimental validation. (Table 1)',
         ]"
       ></TextWithImage>
-      <table-com 
-      chart-title="Table 1. Mutants gained from stability prediction"
-      :chart-data="[
-        ['Name','Design ideas', 'Mutation sites', 'ΔΔG(kcal/mol)'],
-        ['T2', 'disulfide bonds, salt bridges, saturation mutation', 'S84D-S127M-G241C-R350C', '-31.12'],
-        ['T3', 'disulfide bonds, salt bridges, saturation mutation', 'S84D-N124Y-G241C-R350C', '-30.77'],
-        ['T4', 'disulfide bonds, salt bridges, hydrophilic center', 'R87C-W228C-K239R-A567F', '-19.50'],
-        ['T6', 'disulfide bonds, salt bridges, saturation mutation', 'K239R-D448C-F493C-A567Y', '-18.14'],
-        ['R9', 'flexible site', 'Q169L-H174Y-T192W-W194Y-T200L-E201P -V380Y- D625F-H627K-G629P', '-15.54'],
-        ['A8', 'disulfide bonds', 'W45C-F112C', '-14.20'],
-        ['B9', 'disulfide bonds', 'H189C-R485C', '-13.47'],
-        ['zc-1', 'hydrophilic center', 'P29A', '-5.68'],
-        ['zc-8', 'hydrophilic center', 'A567F', '-3.19'],
-        ['zc-3', 'hydrophilic center', 'V123I', '-2.73']
-      ]"></table-com>
+      <table-com
+        chart-title="Table 1. Mutants gained from stability prediction"
+        :chart-data="[
+          ['Name', 'Design ideas', 'Mutation sites', 'ΔΔG(kcal/mol)'],
+          [
+            'T2',
+            'disulfide bonds, salt bridges, saturation mutation',
+            'S84D-S127M-G241C-R350C',
+            '-31.12',
+          ],
+          [
+            'T3',
+            'disulfide bonds, salt bridges, saturation mutation',
+            'S84D-N124Y-G241C-R350C',
+            '-30.77',
+          ],
+          [
+            'T4',
+            'disulfide bonds, salt bridges, hydrophilic center',
+            'R87C-W228C-K239R-A567F',
+            '-19.50',
+          ],
+          [
+            'T6',
+            'disulfide bonds, salt bridges, saturation mutation',
+            'K239R-D448C-F493C-A567Y',
+            '-18.14',
+          ],
+          [
+            'R9',
+            'flexible site',
+            'Q169L-H174Y-T192W-W194Y-T200L-E201P -V380Y- D625F-H627K-G629P',
+            '-15.54',
+          ],
+          ['A8', 'disulfide bonds', 'W45C-F112C', '-14.20'],
+          ['B9', 'disulfide bonds', 'H189C-R485C', '-13.47'],
+          ['zc-1', 'hydrophilic center', 'P29A', '-5.68'],
+          ['zc-8', 'hydrophilic center', 'A567F', '-3.19'],
+          ['zc-3', 'hydrophilic center', 'V123I', '-2.73'],
+        ]"
+      ></table-com>
       <TextWithImage
         main-title="Experimental Verification"
         aid="experimental-verification"
@@ -118,17 +144,10 @@
         ]"
       ></TextWithImage>
 
-      
-      <table-com 
-      chart-title="Table 2. Mutants gained from stability prediction"
-      :chart-data="[
-        ['No.', 'Name', 'Description', 'Designer', 'Length(bp)'],
-        ['1', 'BBa_K4627008', 'A8- disulfide bonds', 'tjusls-china 2023', 2067],
-        [2, 'BBa_K4627053', 'zc-8- Hydrophobic center', 'tjusls-china 2023', 2067],
-        [3, 'BBa_K4627044', 'R9- Flexible site', 'tjusls-china 2023', 2067],
-        [4, 'BBa_K4627026', 'B9- disulfide bonds', 'tjusls-china 2023', 2067],
-        [5, 'BBa_K4627048', 'zc-3- Hydrophobic center', 'tjusls-china 2023', 2067]
-      ]"></table-com>
+      <table-com
+        chart-title="Table 2. Mutants gained from stability prediction"
+        :chart-data="chart"
+      ></table-com>
       <text-with-image
         main-title="Reference"
         :textContent="text"
@@ -140,15 +159,53 @@
 <script setup>
 import ContentDecorate from "@/components/content-decorate.vue";
 import TextWithImage from "@/components/text-with-image.vue";
-import tableCom from "@/components/table-com.vue"
+import tableCom from "@/components/table-com.vue";
 const navigation = [
   "overview",
   "issues",
   "solution",
   "stability-pollution",
   "results",
-  "experimental-verification"
-]
+  "experimental-verification",
+];
+const chart = [
+  ["No.", "Name", "Description", "Designer", "Length(bp)"],
+  [
+    "1",
+    `<a href="http://parts.igem.org/Part:BBa_K4627008" target="_blank">BBa_K4627008</a>`,
+    "A8- disulfide bonds",
+    "tjusls-china 2023",
+    2067,
+  ],
+  [
+    2,
+    '<a href="http://parts.igem.org/Part:BBa_K4627053" target="_blank">BBa_K4627053</a>',
+    "zc-8- Hydrophobic center",
+    "tjusls-china 2023",
+    2067,
+  ],
+  [
+    3,
+    '<a href="http://parts.igem.org/Part:BBa_K4627044" target="_blank">BBa_K4627044</a>',
+    "R9- Flexible site",
+    "tjusls-china 2023",
+    2067,
+  ],
+  [
+    4,
+    '<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">BBa_K4627026</a>',
+    "B9- disulfide bonds",
+    "tjusls-china 2023",
+    2067,
+  ],
+  [
+    5,
+    '<a href="http://parts.igem.org/Part:BBa_K4627048" target="_blank">BBa_K4627048</a>',
+    "zc-3- Hydrophobic center",
+    "tjusls-china 2023",
+    2067,
+  ],
+];
 const text = [
   '[1] " Automated selection of stabilizing mutations in designed and natural proteins " , Proc. Natl. Acad. Sci. USA, v.109(5) pp.1494-99.',
 ];
@@ -194,7 +251,7 @@ const text = [
   align-items: center;
   justify-content: center;
 }
-.picture2{
-  width:50vw;
+.picture2 {
+  width: 50vw;
 }
 </style>

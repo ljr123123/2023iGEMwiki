@@ -108,7 +108,7 @@
           name="Xinnan Chen"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/xinnan-chen.png"
           title="Team Member"
-          description=""
+          description="This guy's mysterious. There's nothing left."
         />
         <avatar-card
           name="Lingfeng Yao"
@@ -132,7 +132,7 @@
           name="Jiahao Wang"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/jiahao-wang.png"
           title="Team Member"
-          description=""
+          description='Hello, iGEM 2023. I am Jiahao Wang from the School of Pharmaceutical Science and Technology of Tianjin University. Because I received several years of art training as a child, I have a deeper understanding of the beauty of structures, which may be the reason why I love structural biology so much. Oh yeah, my favorite singer is Juice WRLD, like I amm listening to "Hard Work Pays Off" right now.'
         />
         <avatar-card
           name="Jia He"

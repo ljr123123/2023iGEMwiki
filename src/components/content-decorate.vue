@@ -36,6 +36,9 @@ const activeItem = ref(props.navigation[0]);
 onMounted(() => {
   bus.on("imageLoaded", handleImageLoad);
   window.addEventListener("scroll", handleScroll);
+  setTimeout(() => {
+    bus.emit("imageLoaded");
+  }, 2000);
 });
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
@@ -156,5 +159,26 @@ const handleImageLoad = () => {
   z-index: 20;
   padding: 20px 40px;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.slot :deep(img) {
+  max-width: 100%;
+  align-self: center;
+  margin-bottom: 3px;
+}
+.slot :deep(.img-name) {
+  align-self: center;
+  font-size: 15px;
+  margin: 3px 0;
+  max-width: 80%;
+  white-space: pre-line;
+}
+.slot :deep(.img-hint) {
+  align-self: center;
+  font-size: 14px;
+  max-width: 60%;
+  white-space: pre-line;
+  margin-bottom: 4px;
 }
 </style>
