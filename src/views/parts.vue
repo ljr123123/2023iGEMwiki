@@ -20,6 +20,7 @@
       ]"></text-with-image>
       <tabel-com
       :chart-data="[
+        
         ['No.', 'Name', 'Description', 'Designer', 'Length(bp)', 'Improved Part'],
         ['1', 'BBa_K4627002', 'Ceres', 'tjusls-china 2023', 2067, ''],
         [2, 'BBa_K4627026', 'Demetra', 'tjusls-china 2023', 2097, ''],
@@ -72,6 +73,15 @@
         [4,'BBa_K4627026', 'B9- disulfide bonds', 'tjusls-china 2023', '2067',],
         [5, 'BBa_K4627048', 'zc-3- Hydrophobic center', 'tjusls-china 2023', '2067',]
       ]"></tabel-com>
+      <text-with-image
+      main-title="Building Enzyme Strategies to Tackle PE Pollution"></text-with-image>
+      <text-with-image
+      main-title="Overview"
+      :text-content="[
+        'Polyethylene (PE), a ubiquitous material in our lives, faces disposal challenges like landfilling or incineration. The public\'s limited understanding of biodegradation methods hinders scientists. Our Human Practice (HP) bridges this gap, sharing project info with students and society. Educational events from elementary to university levels and online presence, like the Begonia Festival and TikTok, engage diverse audiences in synthetic biology.',
+        'Our Human Practice extends to interviews with alumni and professionals, shaping our project practically. Visits to hospitals and bio-pharmaceutical companies inform us of daily waste production and potential collaborations. This hands-on approach aligns our project with medical and industrial realities.',
+        'Initiatives also include debates, fostering discussions on plastic\'s environmental impact. We\'ve created educational storybooks simplifying synthetic biology for younger audiences, blending creativity with science. Through these initiatives, we aim to advance scientific knowledge and ensure our innovations benefit society.'
+      ]"></text-with-image>
     </content-decorate>
   </div>
 </template>
