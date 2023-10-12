@@ -336,6 +336,11 @@ const option = {
 .six-image {
   width: 20%;
   margin: 5%;
+  transition: all .5s;
+}
+.six-image:hover{
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 1vh #00000050;
 }
 .text-11,
 .text-12 {

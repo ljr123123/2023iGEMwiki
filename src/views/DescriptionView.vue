@@ -77,13 +77,6 @@
         ]"
       ></text-with-image>
     </content-decorate>
-    <!-- <SideBar
-      heading="experiments"
-      :child_heading="{ 0: 'experiments' }"
-    ></SideBar>
-    <div class="main-content">
-      
-    </div> -->
   </div>
 </template>
   

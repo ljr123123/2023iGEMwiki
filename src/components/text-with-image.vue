@@ -30,7 +30,7 @@ const handleImageLoad = () => {
 
 <style scoped>
 .text-with-image {
-  width: 100%;
+  width: 50vw;
 }
 .main-title {
   color: rgb(101, 119, 254);
@@ -49,5 +49,8 @@ const handleImageLoad = () => {
 }
 .image {
   max-width: 100%;
+}
+table{
+  max-width:100%;
 }
 </style>

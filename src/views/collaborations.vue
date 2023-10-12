@@ -1,11 +1,11 @@
-<!--Jerry开始做了-->
 <template>
   <div class="main">
     <img
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="main-content">
+    <div class="page-title">collaborations</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage mainTitle="OVERVIEW" :textContent="textContent1">
       </TextWithImage>
       <TextWithImage
@@ -49,11 +49,12 @@
         :textContent="textContent4"
       >
       </TextWithImage>
-    </div>
+    </content-decorate>
   </div>
 </template>
 
 <script setup>
+import ContentDecorate from "@/components/content-decorate.vue";
 import TextWithImage from "@/components/text-with-image.vue";
 const textContent1 = [
   "Cooperation is an essential part of each project. In this bidirectional communication and mutual assistance, we can have a better understanding of the frontier progress of our respective fields,  seeing the shortcomings of the current projects from each other's perspective and viewing problems from a critical perspective. At the same time, different solutions to the same problem by different teams are also worth learning. Previous mistakes will become lessons, and previous achievements will become the template.",
@@ -71,25 +72,50 @@ const textContent3 = [
 const textContent4 = [
   "In 2022, the responsible HP group students of the team joined the CCiC Executive Committee and participated in the organization of online sharing meetings and other activities. In early July 2023, the CCiC Conference was held in Hainan in a combination of online and offline ways. The TJUSLS-China team attended the conference in the online form, showing the team style in front of hundreds of participating teams and individuals. We carefully studied the projects of other participating teams, and gained a lot in background research, modeling, wet experiments, human practice and other aspects. Surprisingly, the members of the art team got creative inspiration in this meeting, and finally determined the style that our team will show for this year.",
 ];
+const navigation = ["overview", "background"];
 </script>
 
 <style scoped>
 .main {
   width: 100%;
   position: relative;
-}
-.main-content {
-  position: absolute;
-  width: 85.2vw;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cbe8fe;
 }
 .other-background {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+}
+.main-content {
+  position: relative;
+  width: 80%;
+  padding: 20px 40px;
+  overflow: visible;
+}
+.content {
+  width: 80%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 20%;
+}
+.page-title {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
+}
+.picture2{
+  width:50vw;
 }
 </style>

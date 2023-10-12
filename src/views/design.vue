@@ -4,8 +4,8 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <SideBar heading="experiments" :child_heading="['experiments']"></SideBar>
-    <div class="main-content">
+    <div class="page-title">collaborations</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
         :textContent="[
@@ -80,9 +80,21 @@
           'We finally selected 64 mutants for subsequent experimental validation. (Table 1)',
         ]"
       ></TextWithImage>
-      <TextWithImage
-        :image-urls="['https://static.igem.wiki/teams/4627/wiki/table.png']"
-      ></TextWithImage>
+      <table-com 
+      chart-title="Table 1. Mutants gained from stability prediction"
+      :chart-data="[
+        ['Name','Design ideas', 'Mutation sites', 'ΔΔG(kcal/mol)'],
+        ['T2', 'disulfide bonds, salt bridges, saturation mutation', 'S84D-S127M-G241C-R350C', '-31.12'],
+        ['T3', 'disulfide bonds, salt bridges, saturation mutation', 'S84D-N124Y-G241C-R350C', '-30.77'],
+        ['T4', 'disulfide bonds, salt bridges, hydrophilic center', 'R87C-W228C-K239R-A567F', '-19.50'],
+        ['T6', 'disulfide bonds, salt bridges, saturation mutation', 'K239R-D448C-F493C-A567Y', '-18.14'],
+        ['R9', 'flexible site', 'Q169L-H174Y-T192W-W194Y-T200L-E201P -V380Y- D625F-H627K-G629P', '-15.54'],
+        ['A8', 'disulfide bonds', 'W45C-F112C', '-14.20'],
+        ['B9', 'disulfide bonds', 'H189C-R485C', '-13.47'],
+        ['zc-1', 'hydrophilic center', 'P29A', '-5.68'],
+        ['zc-8', 'hydrophilic center', 'A567F', '-3.19'],
+        ['zc-3', 'hydrophilic center', 'V123I', '-2.73']
+      ]"></table-com>
       <TextWithImage
         main-title="Experimental Verification"
         :text-content="[
@@ -100,21 +112,33 @@
         ]"
       ></TextWithImage>
 
-      <p align="center">Table 2. Mutants gained from stability prediction</p>
-      <text-with-image
-        :image-urls="['https://static.igem.wiki/teams/4627/wiki/table-2.png']"
-      ></text-with-image>
+      
+      <table-com 
+      chart-title="Table 2. Mutants gained from stability prediction"
+      :chart-data="[
+        ['No.', 'Name', 'Design ideas', 'Designer', 'Length(bp)'],
+        ['1', 'A8', 'disulfide bonds', 'TJUSLS_China', 2070],
+        [2, 'zc-8', 'Hydrophobic center', 'TJUSLS_China', 2070],
+        [3, 'R9', 'Flexible site', 'TJUSLS_China', 2070],
+        [4, 'B9', 'disulfide bonds', 'TJUSLS_China', 2070],
+        [5, 'zc-3', 'Hydrophobic center', 'TJUSLS_China', 2070]
+      ]"></table-com>
       <text-with-image
         main-title="Reference"
         :textContent="text"
       ></text-with-image>
-    </div>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </content-decorate>
   </div>
 </template>
 
 <script setup>
+import ContentDecorate from "@/components/content-decorate.vue";
 import TextWithImage from "@/components/text-with-image.vue";
-import SideBar from "@/components/side-bar.vue";
+import tableCom from "@/components/table-com.vue"
 const text = [
   '[1] " Automated selection of stabilizing mutations in designed and natural proteins " , Proc. Natl. Acad. Sci. USA, v.109(5) pp.1494-99.',
 ];
@@ -124,19 +148,43 @@ const text = [
 .main {
   width: 100%;
   position: relative;
-}
-.main-content {
-  position: absolute;
-  width: 85.2vw;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cbe8fe;
 }
 .other-background {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+}
+.main-content {
+  position: relative;
+  width: 80%;
+  padding: 20px 40px;
+  overflow: visible;
+}
+.content {
+  width: 80%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 20%;
+}
+.page-title {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
+}
+.picture2{
+  width:50vw;
 }
 </style>
