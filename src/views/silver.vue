@@ -7,16 +7,18 @@
     <div class="page-title">Results</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
-      main-title="Silver"
-      sub-title="Enigeering"
-      :text-content="[
-        'While searching for better mutants, we tried different approaches, and did multiple iterations based on the mutual verification of dry lab and wet lab. This was our engineering process, click here if you want to know more.'
-      ]"></text-with-image>
+        main-title="Silver"
+        sub-title="Enigeering"
+        :text-content="[
+          'While searching for better mutants, we tried different approaches, and did multiple iterations based on the mutual verification of dry lab and wet lab. This was our engineering process, click here if you want to know more.',
+        ]"
+      ></text-with-image>
       <text-with-image
-      sub-title="Human-practice"
-      :text-content="[
-        'iGEM is a comprehensive competition, and our project does not just carry out research in the lab, but also includes many practices. In the process of research, we surveyed and interviewed different people, and also communicated with experts. Besides, we carried out publicity and popularization of science when the project achieved certain results.'
-      ]"></text-with-image>
+        sub-title="Human-practice"
+        :text-content="[
+          'iGEM is a comprehensive competition, and our project does not just carry out research in the lab, but also includes many practices. In the process of research, we surveyed and interviewed different people, and also communicated with experts. Besides, we carried out publicity and popularization of science when the project achieved certain results.',
+        ]"
+      ></text-with-image>
     </content-decorate>
   </div>
   <div class="main">
@@ -31,10 +33,9 @@
 </template>
 
 <script setup>
-import TextWithImage from "@/components/text-with-image.vue"
-import ContentDecorate from "@/components/content-decorate.vue"
-export const navigation = [
-]
+import TextWithImage from "@/components/text-with-image.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
+const navigation = [];
 </script>
   
 <style scoped>
