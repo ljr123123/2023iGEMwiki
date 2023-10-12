@@ -45,49 +45,49 @@ export default {
 </script>
 
 <style>
-.copyrights{
-  padding:1vh;
+.copyrights {
+  padding: 1vh;
   background: #00000080;
-  color:#FFFFFF;
+  color: #ffffff;
 }
-.school-logo-box{
-  width:100%;
+.school-logo-box {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#app{
+#app {
   display: flex;
   flex-direction: column;
 }
-.contact-us{
-  padding-bottom:2vh;
-  font-size:20px;
+.contact-us {
+  padding-bottom: 2vh;
+  font-size: 20px;
   font-weight: bold;
 }
-.bottom{
-  
+.bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding:2vh;
+  padding: 2vh;
 }
-.left-side, .right-side{
+.left-side,
+.right-side {
   display: flex;
   flex-direction: column;
-  width:45vw;
+  width: 45vw;
 }
-.other-logo{
-  height:5vh;
-}
-.small-icon{
+.other-logo {
   height: 5vh;
 }
-.school-logo{
-  height:10vh;
+.small-icon {
+  height: 5vh;
 }
-.line-box{
+.school-logo {
+  height: 10vh;
+}
+.line-box {
   display: flex;
   align-items: center;
 }
