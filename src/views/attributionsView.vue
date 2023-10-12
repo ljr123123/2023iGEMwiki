@@ -1,9 +1,5 @@
 <template>
     <div class="attributions">
-        <div class="title">
-            ATTRIBUTIONS
-        </div>
-        <hr>
         <div class="SmallTitle">Introduction</div>
         <div class="introduction">
             Our team was established at Jan 10th, consisting of 18 Tianjin University students from different majors, leaded by two PIs and two instructors. With our joint efforts, although we encountered many difficulties during the project, all of the problems were able to solve in a timely manner and the team can get back on track.
@@ -45,6 +41,22 @@
                     </div> 
                 </table>
             </div>
+
+            <div class="SmallTitle" style="font-size: 8vh">
+                Project Timeline
+            </div>
+            <div class="introduction"> 
+                <table border="1px">
+                        <div class="options" v-for="time in timelines" v-bind:key="time" >
+                            <tr>
+                                <td class="activity">{{ time.activity }}</td>
+                                <td class="start">{{ time.start }}</td>
+                                <td class="end">{{ time.end }}</td>
+                                <td class="total">{{ time.total }}</td>
+                            </tr>
+                        </div> 
+                </table>
+            </div>
          </div>
             
         </div>
@@ -74,7 +86,6 @@
         width: 100%;
         padding: 5vh;
         font-size: 15vh;
-        font-style: ADLaM Display;
         text-align: center;
         font-weight:bold;
     }
@@ -97,11 +108,9 @@
 
     .Name1{
         width: 10vw;
-        text-align: center;
     }
     .Role{
         width: 10vw;
-        text-align: center;
     }
     .GeneralTasks1{
         width: 15vw;
@@ -116,7 +125,6 @@
 
     .Name2{
         width: 15vw;
-        text-align: center;
     }
     .InstitutionType{
         width: 11vw;
@@ -130,6 +138,18 @@
     .SpecificTasks2{
         width: 22vw;
     }
+    .activity{
+        width: 30vw;
+    }
+    .start{
+        width: 15vw;
+    }
+    .end{
+        width: 15vw;
+    }
+    .total{
+        width: 15vw;
+    }
 
 </style>
 
@@ -138,6 +158,10 @@
          data(){
             return{
                 productions:[
+                    {Name:"Name",
+                    Role:"Role",
+                    GeneralTasks:"General Tasks",
+                    SpecificTasks:"Specific Tasks"},
                     {Name:"Zefang Wang",
                     Role:"PI",
                     GeneralTasks:"Analysis, Conceptualization, Project Administration, Writing, Safety",
@@ -249,6 +273,13 @@
                     
                 ],
                 persons:[
+                    {
+                        Name:"Name",
+                        InstitutionType:"Institution Type",
+                        RelationshipToTeam:"Relationship To Team",
+                        GeneralTasks:"General Tasks",
+                        SpecificTasks:"Specific Tasks"
+                    },
                     {
                         Name:"Zhu Cheng",
                         InstitutionType:"Academic",
@@ -380,6 +411,44 @@
                         RelationshipToTeam:"Contractor",
                         GeneralTasks:"Investigation",
                         SpecificTasks:"Provided sequencing to the team."
+                    }
+                ],
+                timelines:[
+                    {
+                         activity:"Project Activity",
+                         start:"Start Date",
+                        end:"End Date",
+                        total:"Total Time (weeks)"
+                    },
+                    {
+                         activity:"1. Recruit Team Members",
+                         start:"2022.11.1",
+                        end:"2023.1.10",
+                        total:"12"
+                    },
+                    {
+                         activity:"2. Development of Project Plan",
+                         start:"2022.11.15",
+                        end:"2023.1.11",
+                        total:"8"
+                    },
+                    {
+                         activity:"3. Wet Laboratory Activities",
+                         start:"2023.4.4",
+                        end:"2023.10.11",
+                        total:"32"
+                    },
+                    {
+                         activity:"4. Dry Laboratory Activities",
+                         start:"2023.5.10",
+                        end:"2023.9.5",
+                        total:"21"
+                    },
+                    {
+                         activity:"5. Building the Team Wiki",
+                         start:"2023.6.30",
+                        end:"2023.10.12",
+                        total:"18"
                     }
                 ]
             }
