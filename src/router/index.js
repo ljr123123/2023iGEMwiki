@@ -111,6 +111,14 @@ const routes = [{
     },
     {
         component: () =>
+            import ("@/views/parts.vue"),
+        path: "/parts",
+        meta: {
+            title: "Parts",
+        },
+    },
+    {
+        component: () =>
             import ("@/views/safety.vue"),
         path: "/safety",
         meta: {

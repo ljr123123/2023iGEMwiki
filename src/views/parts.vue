@@ -4,7 +4,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">Model</div>
+    <div class="page-title">Parts</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
     </content-decorate>
   </div>

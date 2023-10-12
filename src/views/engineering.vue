@@ -5,7 +5,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">Description</div>
+    <div class="page-title">Engineering</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
         main-title="Overview"
@@ -82,13 +82,7 @@
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
 import ContentDecorate from "@/components/content-decorate.vue";
-const navigation = [
-  "overview",
-  "enginnering-cycle",
-  "1st",
-  "2nd",
-  "3rd"
-]
+const navigation = ["overview", "enginnering-cycle", "1st", "2nd", "3rd"];
 </script>
 
 <style scoped>
