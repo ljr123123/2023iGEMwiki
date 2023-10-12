@@ -36,25 +36,14 @@ const navigation = [
 .main {
   width: 100%;
   position: relative;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #cbe8fe;
-=======
-}
-.main-content {
-  position: absolute;
-  width: 85.2%;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
->>>>>>> 42427335e16910cb400aa87d13fef3dd4fc04d03
 }
 .other-background {
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
 }
 .main-content {
   position: relative;
@@ -71,8 +60,6 @@ const navigation = [
   width: 20%;
 }
 .page-title {
-=======
->>>>>>> 42427335e16910cb400aa87d13fef3dd4fc04d03
   position: absolute;
   left: 0;
   top: 0;
