@@ -117,7 +117,6 @@ const navigation = [
 .other-background {
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
 }
 .main-content {
   position: relative;
@@ -134,8 +133,6 @@ const navigation = [
   width: 20%;
 }
 .page-title {
-=======
->>>>>>> 42427335e16910cb400aa87d13fef3dd4fc04d03
   position: absolute;
   left: 0;
   top: 0;
