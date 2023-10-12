@@ -4,7 +4,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">silver</div>
+    <div class="page-title">Silver</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
         main-title="Silver"
@@ -21,22 +21,12 @@
       ></text-with-image>
     </content-decorate>
   </div>
-  <div class="main">
-    <img
-      src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
-      class="other-background"
-    />
-    <div class="page-title">Silver</div>
-    <content-decorate style="margin-top: -20vh" :navigation="navigation">
-    </content-decorate>
-  </div>
 </template>
 
 <script setup>
-import TextWithImage from "@/components/text-with-image.vue"
-import ContentDecorate from "@/components/content-decorate.vue"
-const navigation = [
-]
+import TextWithImage from "@/components/text-with-image.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
+const navigation = [];
 </script>
   
 <style scoped>
