@@ -34,6 +34,8 @@ const handleImageLoad = () => {
 .text-with-image {
   width: 50vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .anchor-point {
   position: absolute;
@@ -56,9 +58,10 @@ const handleImageLoad = () => {
   text-align: justify;
 }
 .image {
+  align-self: center;
   max-width: 100%;
 }
-table{
-  max-width:100%;
+table {
+  max-width: 100%;
 }
 </style>
