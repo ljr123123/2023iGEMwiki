@@ -7,18 +7,21 @@
     <div class="page-title">software</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
-      :text-content="[
-        'When doing sequence design, manual substitutions can be slow and may result in errors. We would like to design a simple little program to help us design sequences better for our structure prediction using AlphaFold2. The user enters the number of protein sequences, clicks the Generate Input Fields button, and the application generates the appropriate number of input fields for the user to enter each protein sequence, mutation position, and target amino acid. After the user fills in all the information, click the Execute Mutation button and the application will perform a mutation operation on each sequence, and the result of the mutation will be displayed in the text box below. Specifically, the mutation operation includes checking whether the input sequence is valid, whether it is a DNA sequence, and performing the mutation at the specified position. Please click here to view the software:：https://github.com/Milucoloryn/igem-pattern'
-      ]"></text-with-image>
+        :text-content="[
+          'When doing sequence design, manual substitutions can be slow and may result in errors. We would like to design a simple little program to help us design sequences better for our structure prediction using AlphaFold2. The user enters the number of protein sequences, clicks the Generate Input Fields button, and the application generates the appropriate number of input fields for the user to enter each protein sequence, mutation position, and target amino acid. After the user fills in all the information, click the Execute Mutation button and the application will perform a mutation operation on each sequence, and the result of the mutation will be displayed in the text box below. Specifically, the mutation operation includes checking whether the input sequence is valid, whether it is a DNA sequence, and performing the mutation at the specified position. Please click here to view the software:',
+        ]"
+      ></text-with-image>
+      <a href="https://github.com/Milucoloryn/igem-pattern" target="_blank"
+        >https://github.com/Milucoloryn/igem-pattern</a
+      >
     </content-decorate>
   </div>
 </template>
 
 <script setup>
-import TextWithImage from "@/components/text-with-image.vue"
-import ContentDecorate from "@/components/content-decorate.vue"
-const navigation = [
-]
+import TextWithImage from "@/components/text-with-image.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
+const navigation = [];
 </script>
   
 <style scoped>
