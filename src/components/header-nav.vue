@@ -3,6 +3,7 @@
     <img
       src="https://static.igem.wiki/teams/4627/wiki/logo.png"
       class="team-logo"
+      @click="toRoute(0)"
     />
     <div class="navbar" ref="navbar" @mouseleave="hideMenu">
       <div
@@ -208,6 +209,7 @@ export default {
   width: 240px;
   margin-left: 50px;
   margin-right: 60px;
+  cursor: pointer;
 }
 .navbar {
   display: flex;
