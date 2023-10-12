@@ -1,7 +1,7 @@
 <template>
   <div class="home-view">
     <video
-      src="../assets/gif.webm"
+      src="https://static.igem.wiki/teams/4627/wiki/gif.jpg"
       autoplay
       muted
       loop
