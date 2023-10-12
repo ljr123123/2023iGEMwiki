@@ -1,13 +1,15 @@
+<!--完成-->
 <template>
   <div class="main">
     <img
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <SideBar heading="experiments" :child_heading="['experiments']"></SideBar>
-    <div class="main-content">
+    <div class="page-title">Description</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
         main-title="Overview"
+        aid="overview"
         :text-content="[
           'Engineering is an essential process for the synthetic biology research. Like other engineering fields, engineering a biological system is a complex, challenging, and comprehensive process that can move very slowly at times. It involves an engineering cycle consisting of the four stages below: design, build, test, and learn. In our project, we continuously perform this four-stage cycle. The continuous accumulation of engineering results led us to the final goal of our project.',
         ]"
@@ -45,6 +47,7 @@
       ></text-with-image>
       <text-with-image
         main-title="Engineering Cycle"
+        aid="enginnering-cycle"
         sub-title="Design"
         :text-content="[
           'To find more suitable mutants, we adopted other approaches to design our proteins: salt bridge and hydrophobic cores.',
@@ -52,49 +55,80 @@
       ></text-with-image>
       <text-with-image
         sub-title="Build"
+        aid="1st"
         :text-content="[
           'Like what we did in the previous cycle, we used AlphaFold2 and PyMOL to predict and analyze the 3D structure of Iterated mutants.',
         ]"
       ></text-with-image>
       <text-with-image
         sub-title="Test"
+        aid="2nd"
         :text-content="[
           'The ΔΔG of the Iterated mutants was calculated by foldX. The best few mutants were selected for validation in wet lab.',
         ]"
       ></text-with-image>
       <text-with-image
         sub-title="Learn"
+        aid="3rd"
         :text-content="[
           'We collated all the dry and wet results and presented all mutants that could effectively improve thermal stability.',
           'Besides, we summarized and reflected on all the design ideas and experimental methods we used, so as to facilitate the understanding and reference of others who are interested in our project.',
         ]"
       ></text-with-image>
-    </div>
+    </content-decorate>
   </div>
 </template>
 
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
-import SideBar from "@/components/side-bar.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
+const navigation = [
+  "overview",
+  "enginnering-cycle",
+  "1st",
+  "2nd",
+  "3rd"
+]
 </script>
 
 <style scoped>
 .main {
   width: 100%;
   position: relative;
-}
-.main-content {
-  position: absolute;
-  width: 85.2vw;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cbe8fe;
 }
 .other-background {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+}
+.main-content {
+  position: relative;
+  width: 80%;
+  padding: 20px 40px;
+  overflow: visible;
+}
+.content {
+  width: 80%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 20%;
+}
+.page-title {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
 }
 </style>

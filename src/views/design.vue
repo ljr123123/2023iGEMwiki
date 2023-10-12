@@ -4,10 +4,11 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">collaborations</div>
+    <div class="page-title">design</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
+        aid="overview"
         :textContent="[
           'Our project aims to improve the thermostability of PEase. For this purpose, we visited companies and interviewed relevant professionals. Their advice is of great help to us. What’s more, we learned some methods from literature materials. Our design mainly from the following aspects: disulfide bonds, flexible site, salt bridges and hydrophobic core.',
           'However, theoretical design alone is less convincing. We used software such as AlphaFold2 and PyMOL to predict and analyze the 3D structure of PEase after mutation, and then FoldX was used to predict its stability. Mutants with low ΔΔG were selected for multiple rounds of iteration. Finally, the theoretical results are verified by experiments.',
@@ -17,12 +18,14 @@
       ></TextWithImage>
       <TextWithImage
         mainTitle="Issues"
+        aid="issues"
         :textContent="[
           'At the beginning of our project, we experimentally measured the Tm value of Ceres to be only about 46℃. If we can improve the thermostability of Ceres so that it can play a catalytic role at higher temperatures, this will be of great significance for improving its catalytic efficiency.',
         ]"
       ></TextWithImage>
       <TextWithImage
         mainTitle="Solution"
+        aid="solution"
         subTitle="Disulfide Bonds:"
         :textContent="[
           'From literature materials, we have learned that in most proteins, disulfide bonds have a significant impact on protein stability. Therefore, we first considered using the method of increasing disulfide bonds in proteins to improve the thermostability of Ceres.',
@@ -69,6 +72,7 @@
       ></TextWithImage>
       <TextWithImage
         mainTitle="Stability Prediction"
+        aid="stability-pollution"
         :text-content="[
           'We designed many mutants, but we could not bring all of them into the wet lab, so we chose to use software to calculate the ΔG of the protein for preliminary screening. (Figure 5)',
           'We use the FoldX plugin in YASARA to calculate the energy. After minimizing the energy of the structure with RepairPDB, use Stability to obtain ΔG(MT)；ΔΔG= ΔG(MT) - ΔG(WT). ΔΔG > 0 means the mutation is unstable, ΔΔG < 0 means the mutation is stable.',
@@ -76,6 +80,7 @@
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/model-2.png']"
       ></TextWithImage>
       <TextWithImage
+      aid="results"
         :text-content="[
           'We finally selected 64 mutants for subsequent experimental validation. (Table 1)',
         ]"
@@ -97,6 +102,7 @@
       ]"></table-com>
       <TextWithImage
         main-title="Experimental Verification"
+        aid="experimental-verification"
         :text-content="[
           'Although we made a lot of calculations in dry lab, the accuracy of theoretical calculation is limited, so we carried out experimental verification. (Figure 6)',
           'First, we designed primers through the website provided by GENEWIZ, and constructed our mutant genes with seamless cloning. After verifying the correctness of the plasmid, the protein was expressed by E. coli BL21.',
@@ -127,10 +133,6 @@
         main-title="Reference"
         :textContent="text"
       ></text-with-image>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
     </content-decorate>
   </div>
 </template>
@@ -139,6 +141,14 @@
 import ContentDecorate from "@/components/content-decorate.vue";
 import TextWithImage from "@/components/text-with-image.vue";
 import tableCom from "@/components/table-com.vue"
+const navigation = [
+  "overview",
+  "issues",
+  "solution",
+  "stability-pollution",
+  "results",
+  "experimental-verification"
+]
 const text = [
   '[1] " Automated selection of stabilizing mutations in designed and natural proteins " , Proc. Natl. Acad. Sci. USA, v.109(5) pp.1494-99.',
 ];

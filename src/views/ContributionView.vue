@@ -4,13 +4,19 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <SideBar heading="Overview" :child_heading="['Overview']"></SideBar>
-    <div class="main-content">
-      <TextWithImage mainTitle="OVERVIEW" :textContent="textContent1">
+    <div class="page-title">Contribution</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
+      <TextWithImage mainTitle="OVERVIEW" 
+      aid="ovreview"
+      :textContent="textContent1">
       </TextWithImage>
-      <TextWithImage mainTitle="PARTS" :textContent="textContent2">
+      <TextWithImage mainTitle="PARTS" 
+      aid="parts"
+      :textContent="textContent2">
       </TextWithImage>
-      <TextWithImage mainTitle="DRY LAB" :textContent="textContent3">
+      <TextWithImage mainTitle="DRY LAB" 
+      aid="dry-lab"
+      :textContent="textContent3">
       </TextWithImage>
       <TextWithImage
         subTitle="1. Hydrophobic interaction[1]:"
@@ -54,6 +60,7 @@
       ></TextWithImage>
       <TextWithImage
         mainTitle="WET LAB"
+        aid="wet-lab"
         :textContent="[
           'When do PEase D protein test, we tried to jointly use thermal cracking method and ultrasonic cracking method for bacteria-breaking operation, and found that the combined use of the two methods had better bacteria-breaking effect, which could more completely separate the superculture and precipitation, and determine the protein expression more clearly. If these bacteria only pyrolyzed without ultrasonic treatment, it is easy to form DNA protein complex, resulting in fuzzy and unclear strips of protein gel, it is difficult to distinguish whether there is the protein we need. We have determined the best treatment conditions through continuous experiments, which can achieve the best effect. (See the experience page for details. )',
         ]"
@@ -79,6 +86,7 @@
       ></text-with-image>
       <text-with-image
         mainTitle="REFERENCE"
+        aid="reference"
         :textContent="[
           '[1] Nezhad NG, Rahman RNZRA, Normi YM, Oslan SN, Shariff FM, Leow TC. Thermostability engineering of industrial enzymes through structure modification. Appl Microbiol Biotechnol. 2022 Aug;106(13-16):4845-4866. doi: 10.1007/s00253-022-12067-x. Epub 2022 Jul 9. Erratum in: Appl Microbiol Biotechnol. 2022 Sep;106(18):6363. PMID: 35804158.',
           '[2] Folch B, Rooman M, Dehouck Y. Thermostability of salt bridges versus hydrophobic interactions in proteins probed by statistical potentials. J Chem Inf Model. 2008 Jan;48(1):119-27. doi: 10.1021/ci700237g. Epub 2007 Dec 28. PMID: 18161956.',
@@ -87,13 +95,13 @@
           '[5] Jia L, Yarlagadda R, Reed CC. Structure Based Thermostability Prediction Models for Protein Single Point Mutations with Machine Learning Tools. PLoS One. 2015 Sep 11;10(9):e0138022. doi: 10.1371/journal.pone.0138022. PMID: 26361227; PMCID: PMC4567301.',
         ]"
       ></text-with-image>
-    </div>
+    </content-decorate>
   </div>
 </template>
   
   <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
-import SideBar from "@/components/side-bar.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
 const textContent1 = [
   "As a continuous and inherited competition, each team will actively provide modeling skills, experimental specifications, parts, etc. that may be useful in the future. We hope to share the experience and achievements we have gained during the past year with all of the teams, so as to provide convenience for iGEMers in the future and make the iGEM community more colorful.Our contribution section will be divided into Parts, Dry lab, Wet lab and HP four parts as following.",
 ];
@@ -122,29 +130,57 @@ const textContent8 = [
   "The protein structure can be stabilized by reducing the entropy of protein unfolding state. It canbe formed when the distance between C_β- C_β  atoms of two amino acids that is not more than 5Å apart (for glycine: from C_α).",
   "In addition to the design directly from the above principles, there are the following methods: ",
 ];
+const navigation = [
+  "overview",
+  "parts",
+  "drylab",
+  "wetlab",
+  "reference"
+]
 </script>
   
   <style scoped>
 .main {
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cbe8fe;
+}
+.other-background {
+  width: 100%;
+  height: 100vh;
 }
 .main-content {
+  position: relative;
+  width: 80%;
+  padding: 20px 40px;
+  overflow: visible;
+}
+.content {
+  width: 80%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 20%;
+}
+.page-title {
   position: absolute;
-  width: 85.2vw;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
 }
 .person-name {
   color: blue;
   cursor: pointer;
-}
-.other-background {
-  width: 100%;
-  height: 80vh;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 </style>

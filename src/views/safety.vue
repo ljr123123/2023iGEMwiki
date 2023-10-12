@@ -5,9 +5,15 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="main-content">
-      <TextWithImage :textContent="textContent1"> </TextWithImage>
-      <TextWithImage mainTitle="Personnel Training" :textContent="textContent2">
+    <div class="page-title">design</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
+      <TextWithImage 
+      mainTitle="OVERVIEW"
+      aid="overview"
+      :textContent="textContent1"> </TextWithImage>
+      <TextWithImage mainTitle="Personnel Training" 
+      aid="training"
+      :textContent="textContent2">
       </TextWithImage>
       <img
         src="https://static.igem.wiki/teams/4627/wiki/safety1.jpg"
@@ -86,12 +92,13 @@
       <TextWithImage :textContent="textContent16"> </TextWithImage>
       <TextWithImage :textContent="textContent17"> </TextWithImage>
       <TextWithImage :textContent="textContent18"> </TextWithImage>
-    </div>
+    </content-decorate>
   </div>
 </template>
 
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
 const textContent1 = [
   "Laboratory safety is a very important part of the iGEM competition, ensuring the safety of team members as well as protecting the environment from any potential hazards. We promise that none of the organisms we use will pose a risk to the safety and health of team members, nor will they cause infections or adverse health effects or symptoms. The following are the measures our team has taken for laboratory safety:",
 ];
@@ -144,32 +151,60 @@ const textContent17 = [
 const textContent18 = [
   "[6]Measures for the Biosafety Environmental Management of Pathogenic Microorganism Laboratories.2006.3.08.http://www.mee.gov.cn/gkml/zj/jl/200910/t20091022_171837.htm",
 ];
+const navigation = [
+  "overview",
+  "training",
+  "project",
+  "laboratory",
+  "hp",
+  "refrernce"
+]
 </script>
 
 <style scoped>
 .main {
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cbe8fe;
+}
+.other-background {
+  width: 100%;
+  height: 100vh;
 }
 .main-content {
+  position: relative;
+  width: 80%;
+  padding: 20px 40px;
+  overflow: visible;
+}
+.content {
+  width: 80%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 20%;
+}
+.page-title {
   position: absolute;
-  width: 85.2vw;
-  top: 80vh;
-  left: 14.8vw;
-  padding: 5vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  height: calc(80vh - 70px);
+  align-items: center;
+  justify-content: center;
 }
 .person-name {
   color: blue;
   cursor: pointer;
 }
-.other-background {
-  width: 100%;
-  height: 80vh;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .picture1 {
   width: 60vw;
 }
