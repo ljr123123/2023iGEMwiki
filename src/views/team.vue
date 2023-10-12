@@ -72,13 +72,13 @@
           name="Yihan Fan"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/yihan-fan.png"
           title="Team Member"
-          description=""
+          description='Yihan Fan, a student who transferred from chemical engineering to geography science and followed a microbiology-oriented mentor. However, he eventually became a graphic designer. "Deadline is the first productivity."'
         />
         <avatar-card
           name="Yiding Zhao"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/yiding-zhao.png"
           title="Team Member"
-          description=""
+          description="A contemporary college student, often tortured by design classes, from the School of Architecture at Tianjin University, is grateful to be able to paint here."
         />
         <avatar-card
           name="Yanru Liu"
@@ -102,7 +102,7 @@
           name="Xiyue Tang"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/xiyue-tang.png"
           title="Team Member"
-          description="I am a student of Tianjin University. As a member of the wiki group，I am delighted to participate in this competition, I hope to learn more from it and make progress together with everyone."
+          description="I am a student of Tianjin University. As a member of the wiki group, I am delighted to participate in this competition, I hope to learn more from it and make progress together with everyone."
         />
         <avatar-card
           name="Xinnan Chen"

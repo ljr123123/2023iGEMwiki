@@ -4,9 +4,11 @@
   </transition>
   <header-nav />
   <router-view />
+  <page-footer />
 </template>
 
 <script>
+import pageFooter from "@/components/page-footer.vue";
 import headerNav from "@/components/header-nav.vue";
 import loadingView from "@/components/loading-view.vue";
 
@@ -14,6 +16,7 @@ export default {
   components: {
     headerNav,
     loadingView,
+    pageFooter,
   },
   data() {
     return {
