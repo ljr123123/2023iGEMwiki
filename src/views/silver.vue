@@ -4,7 +4,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">Results</div>
+    <div class="page-title">silver</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
       main-title="Silver"
@@ -33,7 +33,7 @@
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue"
 import ContentDecorate from "@/components/content-decorate.vue"
-export const navigation = [
+const navigation = [
 ]
 </script>
   

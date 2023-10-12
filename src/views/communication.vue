@@ -6,8 +6,8 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <SideBar heading="Overview" :child_heading="['Overview']"></SideBar>
-    <div class="main-content">
+    <div class="page-title">Contribution</div>
+    <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
         :textContent="textContent"
@@ -105,13 +105,13 @@
           'https://static.igem.wiki/teams/4627/wiki/communication-20.jpg',
         ]"
       ></TextWithImage>
-    </div>
+    </content-decorate>
   </div>
 </template>
 
 <script setup>
 import TextWithImage from "@/components/text-with-image.vue";
-import SideBar from "@/components/side-bar.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
 const textContent = [
   "Polyethylene (PE) is widely used in our production and daily lives. But currently, its disposal methods mostly end with landfilling or incineration. Biodegradation methods are not widely understood by the public, which may hinder scientists from fully realizing the true potential of their innovations. One significant reason for this situation is the lack of promotion of synthetic biology technology.",
   'In this section, we will contemplate how to disseminate information related to the project and knowledge of synthetic biology to the public through various means. Our outreach efforts target both students and society as a whole. On one hand, we conduct activities for students at the elementary, middle, and university levels to popularize knowledge about synthetic biology and plastic degradation. On the other hand, we actively use a combination of offline and online approaches to engage people from all walks of life in understanding synthetic biology. We organize events such as the Begonia Festival, establish a WeChat public account, and create a presence on the Tiktok platform to attract more people to join the field of synthetic biology. Additionally, we have developed an engaging game called "Plastic Eater!" to help users easily raise awareness about plastic cleanup.',
