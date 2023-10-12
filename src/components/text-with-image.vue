@@ -1,5 +1,6 @@
 <template>
   <div class="text-with-image" ref="THIS">
+    <div class="anchor-point" :id="props.aid || props.mainTitle"></div>
     <p class="main-title">{{ props.mainTitle }}</p>
     <p class="sub-title">{{ props.subTitle }}</p>
     <p v-for="item in props.textContent" :key="item" class="simple-text">
@@ -18,6 +19,7 @@
 <script setup>
 import bus from "@/libs/bus.js";
 const props = defineProps([
+  "aid",
   "mainTitle",
   "subTitle",
   "textContent",
@@ -31,6 +33,11 @@ const handleImageLoad = () => {
 <style scoped>
 .text-with-image {
   width: 100%;
+  position: relative;
+}
+.anchor-point {
+  position: absolute;
+  top: -100px;
 }
 .main-title {
   color: rgb(101, 119, 254);
@@ -46,6 +53,7 @@ const handleImageLoad = () => {
   font-size: 15px;
   margin: 2vh;
   margin-left: 0;
+  text-align: justify;
 }
 .image {
   max-width: 100%;
