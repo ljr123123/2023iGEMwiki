@@ -1,72 +1,68 @@
 <!--tang-->
 <template>
   <div class="main">
-      <img src="https://static.igem.wiki/teams/4627/wiki/other-background.png" class="other-background"/>
+    <img
+      src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
+      class="other-background"
+    />
     <div class="main-content">
-      <img src="https://static.igem.wiki/teams/4627/wiki/hp.png" class="picture1"/>
-      <TextWithImage
-      :textContent="textContent1">
-      </TextWithImage>
-      <TextWithImage
-      :textContent="textContent2">
-      </TextWithImage>
-      <TextWithImage
-      :textContent="textContent3">
-      </TextWithImage>
-      <TextWithImage
-      :textContent="textContent4">
-      </TextWithImage>
-      <TextWithImage
-      :textContent="textContent5">
-      </TextWithImage>
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/hp.png"
+        class="picture1"
+      />
+      <TextWithImage :textContent="textContent1"> </TextWithImage>
+      <TextWithImage :textContent="textContent2"> </TextWithImage>
+      <TextWithImage :textContent="textContent3"> </TextWithImage>
+      <TextWithImage :textContent="textContent4"> </TextWithImage>
+      <TextWithImage :textContent="textContent5"> </TextWithImage>
     </div>
   </div>
 </template>
 
 <script setup>
-import TextWithImage from "@/components/text-with-image.vue"
+import TextWithImage from "@/components/text-with-image.vue";
 const textContent1 = [
-  "According to the statistics, over 200 million tons of plastic waste are produced globally every year, with PE plastic pollution accounting for 69% of white pollution. PE is widely used in every aspects of life. However, the mismatch between high production and low recovery rates has led to the accumulation of pollutants. Therefore, it is urgent to find a method to treat PE plastics."
-]
+  "According to the statistics, over 200 million tons of plastic waste are produced globally every year, with PE plastic pollution accounting for 69% of white pollution. PE is widely used in every aspects of life. However, the mismatch between high production and low recovery rates has led to the accumulation of pollutants. Therefore, it is urgent to find a method to treat PE plastics.",
+];
 const textContent2 = [
-  "PEase is the only enzyme newly discovered in recent years that can oxidize polyethylene. So it has great potential value. However, thermostability of wild-type PEase is low, making it difficult to achieve efficient degradation. So this year, we draw on the experience of previous years and read extensive previous work and papers. We focus on improving thermostability of PEase through directed evolution. We believe that PEase will brought incalculable benefits in environmental, economic, and management fields in the future."
-]
+  "PEase is the only enzyme newly discovered in recent years that can oxidize polyethylene. So it has great potential value. However, thermostability of wild-type PEase is low, making it difficult to achieve efficient degradation. So this year, we draw on the experience of previous years and read extensive previous work and papers. We focus on improving thermostability of PEase through directed evolution. We believe that PEase will brought incalculable benefits in environmental, economic, and management fields in the future.",
+];
 const textContent3 = [
-  "During the overall implementation of our project, we gained a comprehensive understanding of the entire life cycle of PE from various aspects such as companies, governments, and residents. We visited relevant enterprises and individuals in plastic production, recycling and treatment, and investigated the use of PE plastics in the market. In addition, we contacted and interviewed experts and scholars related to biology or environment to discuss principles of plastic decomposition, mutant and experimental design, environmental protection, etc. We integrated their opinions and suggestions into our project, hoping to guide the implementation of our project. We had the honor to communicate with government personnel of the Ecological Environment Bureau and learn more about current national policies on plastic pollution control. This has important guiding significance for us in the future."
-]
+  "During the overall implementation of our project, we gained a comprehensive understanding of the entire life cycle of PE from various aspects such as companies, governments, and residents. We visited relevant enterprises and individuals in plastic production, recycling and treatment, and investigated the use of PE plastics in the market. In addition, we contacted and interviewed experts and scholars related to biology or environment to discuss principles of plastic decomposition, mutant and experimental design, environmental protection, etc. We integrated their opinions and suggestions into our project, hoping to guide the implementation of our project. We had the honor to communicate with government personnel of the Ecological Environment Bureau and learn more about current national policies on plastic pollution control. This has important guiding significance for us in the future.",
+];
 const textContent4 = [
-  "At the same time, we maintained cooperation and exchange with regional organizations and multiple universities, such as roundtable discussions, visits, online exchanges, and many other means. In order to promote synthetic biology to a larger audience, we conducted large-scale offline promotional activities, produced games, children's picture book and introduction videos, and distributed questionnaires for surveys. We hoped to shared what we have learned in an easy to understand way, so that layman can also participate. In addition, we used Tiktok short video, WeChat public platform, friends circle and other popular ways to publicize and record the progress of our project, hoping that people can understand the cutting-edge progress of synthetic biology more intuitively. Interestingly, debate team in our school took note of our project. We were very glad to start a debate on synthenic biology with them. "
-]
+  "At the same time, we maintained cooperation and exchange with regional organizations and multiple universities, such as roundtable discussions, visits, online exchanges, and many other means. In order to promote synthetic biology to a larger audience, we conducted large-scale offline promotional activities, produced games, children's picture book and introduction videos, and distributed questionnaires for surveys. We hoped to shared what we have learned in an easy to understand way, so that layman can also participate. In addition, we used Tiktok short video, WeChat public platform, friends circle and other popular ways to publicize and record the progress of our project, hoping that people can understand the cutting-edge progress of synthetic biology more intuitively. Interestingly, debate team in our school took note of our project. We were very glad to start a debate on synthenic biology with them. ",
+];
 const textContent5 = [
-  "Finally, we summarized the information obtained from various activities, which proved the significance and value of HP guiding the whole project. In the process of our activities, we have received participation and guidance from people at all levels of government, school, college and society. We are able to ensure the safety of participants' personal health, private information, etc."
-]
+  "Finally, we summarized the information obtained from various activities, which proved the significance and value of HP guiding the whole project. In the process of our activities, we have received participation and guidance from people at all levels of government, school, college and society. We are able to ensure the safety of participants' personal health, private information, etc.",
+];
 </script>
 
 <style scoped>
-.main{
-  width:100vw;
+.main {
+  width: 100%;
   position: relative;
 }
-.main-content{
+.main-content {
   position: absolute;
-  width:85.2vw;
-  top:80vh;
-  left:14.8vw;
+  width: 85.2vw;
+  top: 80vh;
+  left: 14.8vw;
   padding: 5vh;
 }
-.person-name{
-  color:blue;
-  cursor:pointer;
+.person-name {
+  color: blue;
+  cursor: pointer;
 }
-.other-background{
-  width:100vw;
-  height:80vh;
-  position:absolute;
-  left:0;
-  top:0;
+.other-background {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.picture1{
-  width:80vw;
-  position:abs
+.picture1 {
+  width: 80vw;
+  position: abs;
 }
 </style>
