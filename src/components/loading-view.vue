@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
     <video
-      src="../assets/loading.webm"
+      src="https://static.igem.wiki/teams/4627/wiki/loading.jpg"
       autoplay
       muted
       loop

@@ -8,10 +8,12 @@
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="OverView"
+        aid="overview"
         :textContent="textContent1"
       ></TextWithImage>
       <TextWithImage
         mainTitle="BACKGROUND"
+        aid="background"
         :textContent="textContent2"
         :imageUrls="['https://static.igem.wiki/teams/4627/wiki/des-1.png']"
       ></TextWithImage>
@@ -33,10 +35,12 @@
       ></TextWithImage>
       <TextWithImage
         mainTitle="INSPIRATION"
+        aid="inspiration"
         :textContent="textContent6"
       ></TextWithImage>
       <text-with-image
         mainTitle="METHODS"
+        aid="methods"
         :textContent="[
           'Based on literature materials, we learned four methods to improve the thermostability of enzymes, disulfide bond, salt bridge, hydrophobic cores, flexible sites.',
         ]"
@@ -58,12 +62,14 @@
       ></text-with-image>
       <text-with-image
         mainTitle="FUTURE PERISPECTIVE"
+        aid="future-perspective"
         :textContent="[
           'We hope to improve the environmental adaptability of PEase by improving its thermostability. And in future, increase of catalytic efficiency is expected to accelerate industrial application of PE biodegradation, which will greatly reduce the environmental pollution and energy consumption caused by physical and chemical methods. In addition, we know that PETase is able to be applied at 55 °C with high catalytic efficiency[9]. The improved thermostability of PEase may lay the foundation for achieving  joint action of various plastic degrading enzymes.',
         ]"
       ></text-with-image>
       <text-with-image
         mainTitle="REFERENCE"
+        aid="reference"
         :textContent="[
           '[1] Harshvardhan K, Jha B. Biodegradation of low-density polyethylene by marine bacteria from pelagic waters, Arabian Sea, India. Mar Pollut Bull. 2013 Dec 15;77(1-2):100-6. doi: 10.1016/j.marpolbul.2013.10.025. Epub 2013 Nov 7. PMID: 24210946. ',
           '[2] Álvarez-Hernández C, Cairós C, López-Darias J, Mazzetti E, Hernández-Sánchez C, González-Sálamo J, Hernández-Borges J. Microplastic debris in beaches of Tenerife (Canary Islands, Spain). Mar Pollut Bull. 2019 Sep;146:26-32. doi: 10.1016/j.marpolbul.2019.05.064. Epub 2019 Jun 5. PMID: 31426155',
@@ -106,7 +112,14 @@ const textContent6 = [
   "At the beginning of this year, we organized a volunteer activity to help clean up garbage thrown everywhere in the community. We found the most we collected were plastic bags, most of which were thrown away after use, or used as garbage bags and abandoned after a second use. We wondered about this and learned that most plastic bags were made by polythene. After some learning, we knew that PE is widely used in daily life, and the plastic wrap, shopping bags, water pipes, cables and so on that we usually come into contact with are all PE materials. However, the recycling, degradation and reuse of PE is still a big problem. ",
   "Our lab is currently doing PETase (PET degrading enzyme) optimization related projects, and we have also conducted related research and experiments. At present, the optimization of PETase has become mature and gradually transformed into industrialization, while little research has been done on the biodegradation of other plastics (PP, PE, etc.), especially the enzymatic degradation method. So can we use biodegradation to deal with PE pollution that can be seen everywhere? That's how we started our research.",
 ];
-const navigation = ["overview", "background"];
+const navigation = [
+  "overview",
+  "background",
+  "inspiration",
+  "methods",
+  "future-perspective",
+  "reference",
+];
 </script>
   
 <style scoped>

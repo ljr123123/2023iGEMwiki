@@ -7,8 +7,11 @@
         :src="
           'https://static.igem.wiki/teams/4627/wiki/navigator/' +
           item +
-          '-1.png'
+          '-' +
+          (activeItem === item ? 1 : 0) +
+          '.png'
         "
+        @click="toNav(item)"
       />
     </div>
     <div class="main-content" ref="myDiv">
@@ -24,15 +27,41 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import bus from "@/libs/bus.js";
 const myDiv = ref(null);
 const myCanvas = ref(null);
 const props = defineProps(["navigation"]);
+const activeItem = ref(props.navigation[0]);
 onMounted(() => {
   bus.on("imageLoaded", handleImageLoad);
+  window.addEventListener("scroll", handleScroll);
 });
-
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+const handleScroll = () => {
+  for (const item of props.navigation) {
+    const anchor = document.getElementById(item);
+    if (anchor) {
+      const rect = anchor.getBoundingClientRect();
+      if (rect.top > 0) {
+        activeItem.value = item;
+        break;
+      }
+    }
+  }
+};
+const toNav = (item) => {
+  activeItem.value = item;
+  let anchor = document.getElementById(item);
+  console.log(anchor);
+  if (anchor == null) return;
+  anchor.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
 const handleImageLoad = () => {
   if (myCanvas.value == null) return;
   const canvas = myCanvas.value;
