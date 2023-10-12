@@ -116,12 +116,12 @@
       <table-com 
       chart-title="Table 2. Mutants gained from stability prediction"
       :chart-data="[
-        ['No.', 'Name', 'Design ideas', 'Designer', 'Length(bp)'],
-        ['1', 'A8', 'disulfide bonds', 'TJUSLS_China', 2070],
-        [2, 'zc-8', 'Hydrophobic center', 'TJUSLS_China', 2070],
-        [3, 'R9', 'Flexible site', 'TJUSLS_China', 2070],
-        [4, 'B9', 'disulfide bonds', 'TJUSLS_China', 2070],
-        [5, 'zc-3', 'Hydrophobic center', 'TJUSLS_China', 2070]
+        ['No.', 'Name', 'Description', 'Designer', 'Length(bp)'],
+        ['1', 'BBa_K4627008', 'A8- disulfide bonds', 'tjusls-china 2023', 2067],
+        [2, 'BBa_K4627053', 'zc-8- Hydrophobic center', 'tjusls-china 2023', 2067],
+        [3, 'BBa_K4627044', 'R9- Flexible site', 'tjusls-china 2023', 2067],
+        [4, 'BBa_K4627026', 'B9- disulfide bonds', 'tjusls-china 2023', 2067],
+        [5, 'BBa_K4627048', 'zc-3- Hydrophobic center', 'tjusls-china 2023', 2067]
       ]"></table-com>
       <text-with-image
         main-title="Reference"
