@@ -6,7 +6,7 @@
       src="https://static.igem.wiki/teams/4627/wiki/other-background.png"
       class="other-background"
     />
-    <div class="page-title">Contribution</div>
+    <div class="page-title">Communication</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
@@ -147,6 +147,7 @@ const textContent8 = [
 const textContent9 = [
   "Below is our presentation in class. Middle school students have a certain knowledge of molecular biology, so we not only carried out vivid interpretation, but the analysis of synthetic biology related case principles. ",
 ];
+const navigation = [];
 </script>
 
 <style scoped>
