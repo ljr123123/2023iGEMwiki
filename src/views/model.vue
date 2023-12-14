@@ -8,10 +8,12 @@
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
+        aid="overview"
         :textContent="textContent1"
       ></TextWithImage>
       <TextWithImage
         mainTitle="AlphaFold2 Structure Prediction"
+        aid="Alphafold2"
         subTitle="Introduction"
         :textContent="textContent2"
       ></TextWithImage>
@@ -38,6 +40,7 @@
       >
       <TextWithImage
         mainTitle="FoldX with Rosetta to calculate protein structural stability and mutation effects"
+        aid="FoldX"
         subTitle="Introduction"
         :textContent="textContent5"
       ></TextWithImage>
@@ -77,6 +80,7 @@
       >
       <TextWithImage
         mainTitle="MOE (Molecular Operating Environment) Molecular Docking"
+        aid="MOE"
         subTitle="Introduction"
         :textContent="textContent12"
       ></TextWithImage>
@@ -114,25 +118,48 @@
       <TextWithImage :textContent="textContent15"></TextWithImage>
       <TextWithImage
         mainTitle="Molecular Dynamics"
+        aid="MD"
         subTitle="Introduction"
         :textContent="textContent16"
       ></TextWithImage>
       <TextWithImage
-        subTitle="Basic principles of molecular dynamics simulation"
+        mainTitle="Basic principles of molecular dynamics simulation"
+        subTitle="Time evolution algorithm"
         :textContent="textContent17"
       ></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-7.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-7.svg"
+        style="width: 20%"
+      />
       <TextWithImage :textContent="textContent18"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-8.png" />
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-9.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-8.svg"
+        style="width: 40%"
+      />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-9.svg"
+        style="width: 60%"
+      />
       <TextWithImage :textContent="textContent19"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-10.png" />
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-11.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-10.svg"
+        style="width: 50%"
+      />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-11.svg"
+        style="width: 50%"
+      />
       <TextWithImage :textContent="textContent20"></TextWithImage>
       <TextWithImage :textContent="textContent21"></TextWithImage>
       <TextWithImage :textContent="textContent22"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-12.png" />
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-13.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-12.svg"
+        style="width: 40%"
+      />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-13.svg"
+        style="width: 40%"
+      />
       <TextWithImage
         subTitle="Materials and Methods"
         :textContent="textContent23"
@@ -144,12 +171,21 @@
         :textContent="textContent26"
       ></TextWithImage>
       <TextWithImage :textContent="textContent27"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-14.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-14.svg"
+        style="width: 50%"
+      />
       <TextWithImage :textContent="textContent28"></TextWithImage>
       <TextWithImage :textContent="textContent29"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-15.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-15.svg"
+        style="width: 40%"
+      />
       <TextWithImage :textContent="textContent30"></TextWithImage>
-      <img src="https://static.igem.wiki/teams/4627/wiki/model/model-16.png" />
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/model-16.svg"
+        style="width: 40%"
+      />
       <TextWithImage
         subTitle="Results and Discussion"
         :textContent="textContent31"
@@ -169,15 +205,16 @@
       <img src="https://static.igem.wiki/teams/4627/wiki/model/model-19.png" />
       <span class="img-name"
         >Fig 9. Cartoon structure around theα-helix of the wild
-        type(109-196)</span
+        type(191-202)</span
       >
       <img src="https://static.igem.wiki/teams/4627/wiki/model/model-20.png" />
       <span class="img-name"
         >Fig 10. Cartoon structure around theα-helix of the mutant
-        (109-196)</span
+        (191-202)</span
       >
       <TextWithImage
-        subTitle="References"
+        main-title="References"
+        aid="References"
         :textContent="textContent34"
       ></TextWithImage>
     </content-decorate>
@@ -361,7 +398,7 @@ const textContent32 = [
   `The B factor can indicate the flexibility of the main chain near each protein residue. The higher the B factor, the higher the flexibility of the main chain near the residue, and the worse the thermal stability of this region. In general, rings have a higher B factor, while alpha spirals and beta folds usually have a lower B factor. There is a conversion relationship between B factor and RMSF.`,
 ];
 const textContent33 = [
-  `The results showed that our mutant had higher thermal stability between 191-203. As shown in Figure x, we found in the molecular dynamics simulation results of wild type and mutant that the mutant had a more stable α-helical structure at 191-203.`,
+  `The results showed that our mutant had higher thermal stability between 191-202. As shown in Figure 10, we found in the molecular dynamics simulation results of wild type and mutant that the mutant had a more stable α-helical structure at 191-203.`,
 ];
 const textContent34 = [
   `[1] Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596(7873), 583–589. [DOI: 10.1038/s41586-021-03819-2](https://doi.org/10.1038/s41586-021-03819-2)`,
@@ -374,7 +411,14 @@ const textContent34 = [
   `[8] Yu H, Dalby PA. Coupled molecular dynamics mediate long- and short-range epistasis between mutations that affect stability and aggregation kinetics. Proc Natl Acad Sci U S A. 2018 Nov 20;115(47):E11043-E11052. doi: 10.1073/pnas.1810324115. Epub 2018 Nov 7. PMID: 30404916; PMCID: PMC6255212.`,
   `[9] Yu H, Dalby PA. Exploiting correlated molecular-dynamics networks to counteract enzyme activity-stability trade-off. Proc Natl Acad Sci U S A. 2018 Dec 26;115(52):E12192-E12200. doi: 10.1073/pnas.1812204115. Epub 2018 Dec 10. PMID: 30530661; PMCID: PMC6310800.`,
 ];
-const navigation = [];
+const navigation = [
+  "overview",
+  "Alphafold2",
+  "FoldX",
+  "MOE",
+  "MD",
+  "References",
+];
 </script>
   
 <style scoped>

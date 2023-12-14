@@ -44,9 +44,7 @@
       <script setup>
       import TextWithImage from "@/components/text-with-image.vue";
       import ContentDecorate from "@/components/content-decorate.vue";
-      const navigation = [
-        "overview",
-      ]
+      const navigation = []
       </script>
       
       <style scoped>

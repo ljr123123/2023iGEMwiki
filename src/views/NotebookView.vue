@@ -15,7 +15,10 @@
               'For the wet lab team, notebook is essential. By faithfully recording daily experimental process, the subsequent summary, reflection and optimization can be effectively carried out. Each member of our experimental group has his own notebook. For details, please click on each member\'s name to view their notebook.',
         ]"
             ></text-with-image>
-            <p class="person-name" v-for="item in persons" :key="item">{{ item }}</p>
+            <!-- <p class="person-name" v-for="item in persons" :key="item">{{ item }}</p> -->
+            <a class="person-name" :href="item.url" v-for="item in persons" :key="item.name" target="_blank">
+              {{ item.name }}
+            </a>
           </content-decorate>
         </div>
       </template>
@@ -23,18 +26,40 @@
       <script setup>
       import TextWithImage from "@/components/text-with-image.vue";
       import ContentDecorate from "@/components/content-decorate.vue";
-      const navigation = [
-        "overview",
-      ];
+      const navigation = [];
       const persons = [
-        "Yingjie Shen",
-        "Weiwei Ji",
-        "Yanru Liu",
-        "Chenyu Luan",
-        "Lingfeng Yao",
-        "Jiahao Wang",
-        "Gang Cao",
-        "Zhiyu Zhang",
+        {
+          name: "Yingjie Shen",
+          url: "https://static.igem.wiki/teams/4627/wiki/shenyingjie.pdf"
+        },
+        {
+          name: "Weiwei Ji",
+          url: "https://static.igem.wiki/teams/4627/wiki/jiweiwei.pdf"
+        },
+        {
+          name: "Yanru Liu",
+          url: "https://static.igem.wiki/teams/4627/wiki/liuyanru.pdf"
+        },
+        {
+          name: "Chenyu Luan",
+          url: "https://static.igem.wiki/teams/4627/wiki/luanchenyu.pdf"
+        },
+        {
+          name: "Lingfeng Yao",
+          url: "https://static.igem.wiki/teams/4627/wiki/yaolingfeng.pdf"
+        },
+        {
+          name: "Jiahao Wang",
+          url: "https://static.igem.wiki/teams/4627/wiki/wangjiahao.pdf"
+        },
+        {
+          name: "Gang Cao",
+          url: "https://static.igem.wiki/teams/4627/wiki/caogang.pdf"
+        },
+        {
+          name: "Zhiyu Zhang",
+          url: "https://static.igem.wiki/teams/4627/wiki/zhangzhiyu.pdf"
+        }
       ];
       </script>
       
@@ -80,5 +105,8 @@
       }
       .picture {
         width: 40px;
+      }
+      .person-name{
+        margin: 10px 5px;
       }
       </style>

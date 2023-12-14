@@ -6,10 +6,15 @@
     />
     <div class="page-title">collaborations</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
-      <TextWithImage mainTitle="OVERVIEW" :textContent="textContent1">
+      <TextWithImage
+        mainTitle="OVERVIEW"
+        aid="OVERVIEW"
+        :textContent="textContent1"
+      >
       </TextWithImage>
       <TextWithImage
         mainTitle="Collaboration with BJEA_China"
+        aid="BJEA_China"
         :textContent="textContent2"
       >
       </TextWithImage>
@@ -23,32 +28,41 @@
       />
 
       <TextWithImage
-        subTitle="Begonia Day in Tianjin University with Beiyang Medical Students Union"
+        mainTitle="Begonia Day in Tianjin University with Beiyang Medical Students Union"
+        aid="Begonia Day"
         :textContent="textContent3"
       >
       </TextWithImage>
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-3.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-4.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-5.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-6.jpg"
-        class="picture2"
-      />
+
+      <div class="flex_img_wrap">
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-3.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-4.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-5.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/team-collaboration-1-6.jpg"
+          alt=""
+        />
+      </div>
 
       <TextWithImage
-        subTitle="Collaboration with CCiC"
+        mainTitle="Collaboration with CCiC"
+        aid="CCiC"
         :textContent="textContent4"
       >
       </TextWithImage>
+      <img
+        src="https://static.igem.wiki/teams/4627/wiki/canhuizhengming.jpg"
+        class="picture2"
+      />
     </content-decorate>
   </div>
 </template>
@@ -72,10 +86,21 @@ const textContent3 = [
 const textContent4 = [
   "In 2022, the responsible HP group students of the team joined the CCiC Executive Committee and participated in the organization of online sharing meetings and other activities. In early July 2023, the CCiC Conference was held in Hainan in a combination of online and offline ways. The TJUSLS-China team attended the conference in the online form, showing the team style in front of hundreds of participating teams and individuals. We carefully studied the projects of other participating teams, and gained a lot in background research, modeling, wet experiments, human practice and other aspects. Surprisingly, the members of the art team got creative inspiration in this meeting, and finally determined the style that our team will show for this year.",
 ];
-const navigation = [];
+const navigation = ["OVERVIEW", "BJEA_China", "Begonia Day", "CCiC"];
 </script>
 
 <style scoped>
+.flex_img_wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.flex_img_wrap img {
+  width: 49%;
+  margin-bottom: 20px;
+}
 .main {
   width: 100%;
   position: relative;
@@ -115,7 +140,7 @@ const navigation = [];
   align-items: center;
   justify-content: center;
 }
-.picture2{
-  width:50vw;
+.picture2 {
+  width: 50vw;
 }
 </style>

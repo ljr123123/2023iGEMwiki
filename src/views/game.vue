@@ -197,6 +197,7 @@ p {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding: 50px 0;
 }
 .side-controller {
   display: flex;
@@ -205,13 +206,14 @@ p {
   background: rgba(255, 0, 0, 0.1);
 }
 .game-main {
-  height: 100vh;
+  height: 70vh;
   width: 70vw;
   background: rgba(172, 255, 47, 0.1);
   position: relative;
 }
 .icon {
   height: 30px;
+  cursor: pointer;
 }
 .enzyme {
   height: 50px;

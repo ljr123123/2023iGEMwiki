@@ -10,10 +10,12 @@
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Overview"
+        aid="Overview"
         :textContent="textContent"
       ></TextWithImage>
       <TextWithImage
         mainTitle="COMMUNICATION"
+        aid="COMMUNICATION"
         subTitle="1. Booth Promotion at Begonia Festival"
         :textContent="textContent2"
         :imageUrls="[
@@ -24,15 +26,27 @@
       <TextWithImage
         subTitle="2. Online Platforms"
         :textContent="textContent3"
-        :imageUrls="[
-          'https://static.igem.wiki/teams/4627/wiki/communication-3.jpg',
-          'https://static.igem.wiki/teams/4627/wiki/communication-4.jpg',
-          'https://static.igem.wiki/teams/4627/wiki/communication-5.jpg',
-        ]"
       ></TextWithImage>
+      <div class="flex_img">
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-3.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-4.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-5.jpg"
+          alt=""
+        />
+      </div>
       <TextWithImage
         subTitle="3. Mini-Game: Plastic-Eater!"
         :textContent="textContent4"
+      ></TextWithImage>
+      <router-link to="/game">Please click here.</router-link>
+      <TextWithImage
         :imageUrls="[
           'https://static.igem.wiki/teams/4627/wiki/communication-6.jpg',
         ]"
@@ -62,6 +76,7 @@
       ></TextWithImage>
       <TextWithImage
         mainTitle="EDUCATION"
+        aid="EDUCATION"
         subTitle="1. Debate!"
         :textContent="textContent6"
         :imageUrls="[
@@ -72,13 +87,27 @@
       <TextWithImage
         subTitle="2. Elementary School Kids"
         :textContent="textContent7"
-        :imageUrls="[
-          'https://static.igem.wiki/teams/4627/wiki/communication-12.jpg',
-          'https://static.igem.wiki/teams/4627/wiki/communication-13.jpg',
-          'https://static.igem.wiki/teams/4627/wiki/communication-14.jpg',
-          'https://static.igem.wiki/teams/4627/wiki/communication-15.jpg',
-        ]"
       ></TextWithImage>
+
+      <div class="flex_img_wrap">
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-12.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-13.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-14.jpg"
+          alt=""
+        />
+        <img
+          src="https://static.igem.wiki/teams/4627/wiki/communication-15.jpg"
+          alt=""
+        />
+      </div>
+
       <iframe
         src="https://static.igem.wiki/teams/4627/wiki/color-magic.pdf"
       ></iframe>
@@ -94,7 +123,9 @@
       <iframe
         src="https://static.igem.wiki/teams/4627/wiki/animalbehaviour.pdf"
       ></iframe>
-      <iframe src=""></iframe>
+      <iframe
+        src="https://static.igem.wiki/teams/4627/wiki/introductiontosyntheticbiology.pdf"
+      ></iframe>
       <TextWithImage
         :subTitle="'4. University Lecture'"
         :textContent="[
@@ -127,8 +158,8 @@ const textContent3 = [
   "On these online platforms, we promote our project, share laboratory experiences, hoping to connect with like-minded individuals. We use simple and understandable images and text to showcase our project and upload videos of laboratory life and synthetic biology experiments on TikTok platform to attract more people's interest in laboratory life and synthetic biology.",
 ];
 const textContent4 = [
-  'Mini-games are typically fun and educational, making it easier for the public to accept and understand our knowledge. Our game is somewhat like "Aircraft Battle," where the position of "launching cannons" represents our PEase (plastic-eating enzyme). Catch the falling PE plastic to score points, but be careful not to touch the bombs, as they lead to failure. Through this game, we aim to make more people aware of the existence of "launching cannons" (enzymes) that can precisely destroy "aircraft" (PE).',
-  "Would you like to try our game? Please click here.",
+  `Mini-games are typically fun and educational, making it easier for the public to accept and understand our knowledge. Our game is somewhat like "Aircraft Battle," where the position of "launching cannons" represents our PEase (plastic-eating enzyme). Catch the falling PE plastic to score points, but be careful not to touch the bombs, as they lead to failure. Through this game, we aim to make more people aware of the existence of "launching cannons" (enzymes) that can precisely destroy "aircraft" (PE).',
+  "Would you like to try our game?`,
 ];
 const textContent5 = [
   "After several rounds of science outreach, we conducted a survey through the WeChat public platform. The survey questions focused on topics like waste sorting, the hazards and management of white pollution, plastic recycling, and more aspects. We aimed to assess people's knowledge and habits regarding plastics and to identify ways we could further serve society. The questionnaire was divided into three versions targeting students, the general public, and those working in plastic-related fields, to gather comprehensive insights.",
@@ -147,13 +178,37 @@ const textContent8 = [
 const textContent9 = [
   "Below is our presentation in class. Middle school students have a certain knowledge of molecular biology, so we not only carried out vivid interpretation, but the analysis of synthetic biology related case principles. ",
 ];
-const navigation = [];
+const navigation = ["Overview", "COMMUNICATION", "EDUCATION"];
 </script>
 
 <style scoped>
+.flex_img_wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.flex_img_wrap img {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.flex_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+}
+.flex_img img {
+  width: 30%;
+  flex: 1;
+  margin: 0 10px;
+}
 iframe {
   height: 150vh;
-  width: 80vw;
+  width: 100%;
+  margin: 15px auto;
 }
 .main {
   width: 100%;

@@ -29,8 +29,8 @@ const props = defineProps([
 
 <style scoped>
 .cardContainer {
-  width: 285px;
-  height: 250px;
+  width: 225px;
+  height: 197.36px;
   display: flex;
   align-items: center;
   justify-content: center;

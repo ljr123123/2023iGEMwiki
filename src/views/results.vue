@@ -13,37 +13,39 @@
       ></text-with-image>
       <text-with-image
         main-title="2.Construction of pET-22b(+) expression vector"
+        aid="Vector"
         :text-content="[
           'Abstract: ',
-          'constraction: Through literature review, it is found that the thermostability of enzymes can be effectively improved by designing disulfide bonds in proteins（A, B series）. We constructed 35 pET-22b-PEaseMUT-His plasmids (BBa_K4627001~BBa_K4627035 ), all of which were expressed in Escherichia coli.',
-          'constraction: We found that in addition to increasing disulfide bonds, it is also possible to increase the thermalstability of proteins by changing their flexible sites (R series), hydrophobic core (Z series), and salt bridges. So We constructed 19 pET-22b-PEaseMUT-His plasmids(BBa_K4627036~BBa_K4627054), all expressing in E.coli.',
-          'constraction: We combined the results of the first and second times to iteratively optimize 10 mutants（BBa_K4627055~BBa_K4627064）, all expressing in E.coli.',
-          'First, we construct the pET-22b-PEase-His plasmid. The structure diagram of pET-22b-PEase-His plasmid is shown in Figure 1.',
+          '1st constraction: Through literature review, it is found that the thermostability of enzymes can be effectively improved by designing disulfide bonds in proteins（A, B series）. We constructed 35 pET-22b-PEaseMUT-His plasmids (BBa_K4627001~BBa_K4627035 ), all of which were expressed in Escherichia coli.',
+          '2nd constraction: We found that in addition to increasing disulfide bonds, it is also possible to increase the thermalstability of proteins by changing their flexible sites (R series), hydrophobic core (Z series), and salt bridges. So We constructed 19 pET-22b-PEaseMUT-His plasmids(BBa_K4627036~BBa_K4627054), all expressing in E.coli.',
+          '3rd constraction: We combined the results of the first and second times to iteratively optimize 10 mutants（BBa_K4627055~BBa_K4627064）, all expressing in E.coli.',
+          'First, we construct the pET-22b-PEase-His plasmid. The structure diagram of pET-22b-PEase-His plasmid is shown in',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-1.png']"
       ></text-with-image>
       <text-with-image
         :text-content="[
-          'Secondly, we want to construct the plasmids of these 64 mutants. These mutants contain 1~10 mutation sites. When we began experimenting, we found that some mutations cannot be successfully amplified. So, we search the literature and tried to construct them through the Overlap PCR method again. Here are parts of our results. （Figure.2）After successful PCR of long and short fragments, we connected the two to build mutants by seamless clone.',
+          'Secondly, we want to construct the plasmids of these 64 mutants. These mutants contain 1~10 mutation sites. When we began experimenting, we found that some mutations cannot be successfully amplified. So, we search the literature and tried to construct them through the Overlap PCR method again. Here are parts of our results. After successful PCR of long and short fragments, we connected the two to build mutants by seamless clone.',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-2.png']"
       ></text-with-image>
       <text-with-image
         :text-content="[
-          'Finally, the assembled expression vector was transformed into E. Coli DH5α, and ampicillin resistant positive strains were screened by E. coli DH5α.(Figure 3.)For the specific construction of each mutant pET-22b expression vector, you can search for it in the parts section.',
+          'Finally, the assembled expression vector was transformed into E. Coli DH5α, and ampicillin resistant positive strains were screened by E. coli DH5α.For the specific construction of each mutant pET-22b expression vector, you can search for it in the parts section.',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-3.png']"
       ></text-with-image>
       <text-with-image
         main-title="3.Protein expression"
+        aid="Protein"
         :text-content="[
-          'After obtaining the sequencing results from GeneWiz, the correctly sequenced plasmid was transformed into BL21 competent cell to screen for ampicillin resistant positive strains. After test expression and Massive expression, we used the Ni Agarose to purify the target protein. The purification of these proteins is then detected by SDS-PAGE. Here are parts of our results in Figure 4. 35 parts(you can go to the parts section to view for details) were purified successfully and could go to the testing step. However, the other parts formed inclusion bodies.',
+          'After obtaining the sequencing results from GeneWiz, the correctly sequenced plasmid was transformed into BL21 competent cell to screen for ampicillin resistant positive strains. After test expression and Massive expression, we used the Ni Agarose to purify the target protein. The purification of these proteins is then detected by SDS-PAGE. Here are parts of our results in. 35 parts(you can go to the parts section to view for details) were purified successfully and could go to the testing step. However, the other parts formed inclusion bodies.',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-4.png']"
       ></text-with-image>
       <text-with-image
         :text-content="[
-          'Desalting：The collected protein samples are further purified by Gel filtration chromatography. We determine the state of protein aggregation based on the peak position and collect protein samples based on the results of running the gel. （Figure. 5 )',
+          'Desalting：The collected protein samples are further purified by Gel filtration chromatography. We determine the state of protein aggregation based on the peak position and collect protein samples based on the results of running the gel. ',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-5.png']"
       ></text-with-image>
@@ -54,13 +56,15 @@
       ></text-with-image>
       <text-with-image
         main-title="4.Determination of mutants’ thermostability"
+        aid="Thermostability"
         :text-content="[
-          'We use Quantitative Real-time PCR to detect the Tm value of the mutants.(Figure. 6)',
+          'We use Quantitative Real-time PCR to detect the Tm value of the mutants.',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/results-6.png']"
       ></text-with-image>
       <text-with-image
         main-title="5.Enzyme activity test of Ceres"
+        aid="Ceres"
         :text-content="[
           'We try to test the reactivity of Ceres enzyme using PE4000 powder and LDPE circle sheet as reactants, try smear method and the way of using reaction solution and try to measure the activity of the enzyme by weighing, EM, infrared and Raman spectroscopy, and finally decide to use LDPE circle sheet as the reactant, and the weighing method to determine the reactivity. In order to assess the activity of these proteins, 5μL of each purified enzyme at a concentration of 1–5μg/μL, were applied separately 8 sequential times (90min each) on PE films. Finally, we remove PE films, process and dry it, and weighed the LDPE circles before and after the reaction using an analytical balance (0.0001 g). Here are parts of our results(Table 1). ',
         ]"
@@ -73,6 +77,7 @@
       ></text-with-image>
       <text-with-image
         main-title="6. Protein D Test"
+        aid="Protein-D"
         :text-content="[
           'As pET22b was not a suitable vector for Demetra, we selected different vectors and strains for experimental expression. We selected 7 vectors and 3 different strains for the test, and set 5 different IPTG concentrations. After inducing protein expression in the tube, SDS-page was used to verify the successful expression.',
         ]"
@@ -101,7 +106,7 @@
       ></text-with-image>
       <text-with-image
         main-title="9. Reference"
-        aid="future"
+        aid="reference"
         :text-content="[
           '[1] Sanluis-Verdes A, Colomer-Vidal P, Rodriguez-Ventura F, Bello-Villarino M, Spinola-Amilibia M, Ruiz-Lopez E, Illanes-Vicioso R, Castroviejo P, Aiese Cigliano R, Montoya M, Falabella P, Pesquera C, Gonzalez-Legarreta L, Arias-Palomo E, Solà M, Torroba T, Arias CF, Bertocchini F. Wax worm saliva and the enzymes therein are the key to polyethylene degradation by Galleria mellonella. Nat Commun. 2022 Oct 4;13(1):5568. doi: 10.1038/s41467-022-33127-w. PMID: 36195604; PMCID: PMC9532405.',
           '[2] Bombelli P, Howe CJ, Bertocchini F. Polyethylene bio-degradation by caterpillars of the wax moth Galleria mellonella. Curr Biol. 2017 Apr 24;27(8):R292-R293. doi: 10.1016/j.cub.2017.02.060. PMID: 28441558.',
@@ -117,7 +122,17 @@ import ContentDecorate from "@/components/content-decorate.vue";
 const textContent = [
   'In our project, we focused on improving the thermostability of PEase (Ceres) by designing disulfide bonds, flexible sites, salt Bridges, and hydrophobic cores. A total of 64 PEase (Ceres) expression vectors were constructed, among which 35 mutants successfully expressed proteins, and after detecting their Tm values by real-time fluorescent quantitative PCR, we finally confirmed 5 of them that showed satisfactory results. They are <a href="http://parts.igem.org/Part:BBa_K4627008" target="_blank">W45C-F112C(BBa_K4627008)</a>、<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">H189C-R485C(BBa_K4627026)</a>、<a href="http://parts.igem.org/Part:BBa_K4627044" target="_blank">Q169L-H174Y-T192W-W194Y-T200L-E201P-V380Y-D625F-H627K-G629P(BBa_K4627044)</a>、<a href="http://parts.igem.org/Part:BBa_K4627048" target="_blank">V123I(BBa_K4627048)</a>、<a href="http://parts.igem.org/Part:BBa_K4627053" target="_blank">A567F(BBa_K4627053)</a>.',
 ];
-const navigation = ["overview", "conclusion", "future", "reference"];
+const navigation = [
+  "overview",
+  "Vector",
+  "Protein",
+  "Thermostability",
+  "Ceres",
+  "Protein-D",
+  "conclusion",
+  "future",
+  "reference",
+];
 </script>
   
 <style scoped>

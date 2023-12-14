@@ -25,13 +25,13 @@
       </div>
       <p class="content-title">Instructor</p>
       <div class="content-avatars">
-        <avatar-card
+        <!-- <avatar-card
           :special="true"
           name="Shen Wang"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/kun-wang.png"
           title="Team Instructor"
           description="Graduate student in School of Life Sciences with rich experimental skills and high experimental accomplishment. He gave us great help in the process of our experiment, including pointing out a number of laboratory safety that we should pay attention to and demonstrating standard experimental operations patiently."
-        />
+        /> -->
         <avatar-card
           name="Jiahui Jin"
           avatar="https://static.igem.wiki/teams/4627/wiki/team/members/jiahui-jin.png"

@@ -29,6 +29,25 @@ export default {
     },
   },
   mounted() {
+    const debounce = function(callback, delay) {
+      let tid;
+      return function (...args) {
+        const ctx = this;
+        tid && clearTimeout(tid);
+        tid = setTimeout(() => {
+          callback.apply(ctx, args);
+        }, delay);
+      };
+    };
+
+    const _ = window.ResizeObserver;
+    window.ResizeObserver = class ResizeObserver extends _ {
+      constructor(callback) {
+        callback = debounce(callback, 20);
+        super(callback);
+      }
+    };
+
     if (this.$route.path === "/") {
       this.loading = true;
     }
@@ -46,6 +65,7 @@ export default {
   },
 };
 </script>
+
 
 <style>
 .copyrights {
@@ -68,22 +88,13 @@ export default {
   font-size: 20px;
   font-weight: bold;
 }
-.bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 2vh;
-}
 .left-side,
 .right-side {
   display: flex;
   flex-direction: column;
   width: 45vw;
 }
-.other-logo {
-  height: 5vh;
-}
+
 .small-icon {
   height: 5vh;
 }
@@ -142,4 +153,14 @@ p {
 .fade-leave-to {
   opacity: 0;
 }
+
+.simple-text {
+  font-size: 15px;
+  margin: 2vh;
+  margin-left: 0;
+  text-align: justify;
+  line-height: 26px;
+  text-indent: 2em;
+}
+
 </style>

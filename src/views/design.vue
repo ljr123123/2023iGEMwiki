@@ -12,7 +12,7 @@
         :textContent="[
           'Our project aims to improve the thermostability of PEase. For this purpose, we visited companies and interviewed relevant professionals. Their advice is of great help to us. What’s more, we learned some methods from literature materials. Our design mainly from the following aspects: disulfide bonds, flexible site, salt bridges and hydrophobic core.',
           'However, theoretical design alone is less convincing. We used software such as AlphaFold2 and PyMOL to predict and analyze the 3D structure of PEase after mutation, and then FoldX was used to predict its stability. Mutants with low ΔΔG were selected for multiple rounds of iteration. Finally, the theoretical results are verified by experiments.',
-          'In addition, we took a long time to find the right plasmic for Demetra. So we only The carried out rational design of Ceres.',
+          'In addition, we took a long time to find the right plasmic for Demetra. So we only carried out rational design of Ceres.',
         ]"
         :imageUrls="['https://static.igem.wiki/teams/4627/wiki/overview.png']"
       ></TextWithImage>
@@ -32,7 +32,7 @@
           'According to the literature, one of the criteria for disulfide bond screening is: the distance between C_β- C_βatoms of two amino acids that is not more than 5Å apart (for glycine: from C_α). Therefore, PyMOL was used to search for suitable mutation sites.',
           'In addition, we also used software Discovery Studio to assist our design. It assesses the reliability of mutations from the following perspectives: energy, bad contacts, thermal mobility, sequence separation, residue depth, volume change, environment, and so on.',
           'To verify the reliability of the design, we used AlphaFold2 to predict structure after mutation to facilitate subsequent screening.',
-          'Here we present an example. (Figure 2)',
+          'Here we present an example. ',
         ]"
         :imageUrls="[
           'https://static.igem.wiki/teams/4627/wiki/disulfide-bond.png',
@@ -42,7 +42,7 @@
         subTitle="Flexible Site:"
         :textContent="[
           'The stability of enzyme molecules mainly depends on the rigidity of the conformation, and the flexible site will be the first to start unfolding when large thermal changes occur. Therefore, a strategy for rigidifying the flexible site is proposed.',
-          'The first step of the strategy is to identify the flexible site. We use molecular dynamics simulations to characterize the flexibility of each site with B-factors (RMSF, figure 3).',
+          'The first step of the strategy is to identify the flexible site. We use molecular dynamics simulations to characterize the flexibility of each site with B-factors (RMSF).',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/flexible.png']"
       ></TextWithImage>
@@ -56,7 +56,7 @@
         :text-content="[
           'Salt bridge formation is inferred for a pair of oppositely charged residues (Asp or Glu with Arg, Lys or His) if they meet the following criteria:(1)The centroids of the side-chain charged groups in oppositely charged residues lie within 4.0 Å of each other; and(2) at least one pair of Asp or Glu side-chain carboxyl oxygen atoms and side-chain nitrogen atoms of Arg, Lys or His are within a 4.0 Å distance.( Sandeep Kumar, Ruth Nussinov, Salt bridge stability in monomeric proteins)',
           'Similar to our design of disulfide bonds, we searched for suitable mutation sites using PyMOL software according to this principle.',
-          'Here we present an example. (Figure 4)',
+          'Here we present an example. ',
         ]"
         :image-urls="[
           'https://static.igem.wiki/teams/4627/wiki/disulfide-bond.png',
@@ -74,7 +74,7 @@
         mainTitle="Stability Prediction"
         aid="stability-pollution"
         :text-content="[
-          'We designed many mutants, but we could not bring all of them into the wet lab, so we chose to use software to calculate the ΔG of the protein for preliminary screening. (Figure 5)',
+          'We designed many mutants, but we could not bring all of them into the wet lab, so we chose to use software to calculate the ΔG of the protein for preliminary screening.',
           'We use the FoldX plugin in YASARA to calculate the energy. After minimizing the energy of the structure with RepairPDB, use Stability to obtain ΔG(MT)；ΔΔG= ΔG(MT) - ΔG(WT). ΔΔG > 0 means the mutation is unstable, ΔΔG < 0 means the mutation is stable.',
         ]"
         :image-urls="['https://static.igem.wiki/teams/4627/wiki/model-2.png']"
@@ -130,7 +130,7 @@
         main-title="Experimental Verification"
         aid="experimental-verification"
         :text-content="[
-          'Although we made a lot of calculations in dry lab, the accuracy of theoretical calculation is limited, so we carried out experimental verification. (Figure 6)',
+          'Although we made a lot of calculations in dry lab, the accuracy of theoretical calculation is limited, so we carried out experimental verification. ',
           'First, we designed primers through the website provided by GENEWIZ, and constructed our mutant genes with seamless cloning. After verifying the correctness of the plasmid, the protein was expressed by E. coli BL21.',
         ]"
         :image-urls="[

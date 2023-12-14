@@ -35,7 +35,7 @@ const handleImageLoad = () => {
 
 <style scoped>
 .text-with-image {
-  width: 50vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,6 +59,8 @@ const handleImageLoad = () => {
   margin: 2vh;
   margin-left: 0;
   text-align: justify;
+  line-height: 26px;
+  text-indent: 2em;
 }
 .image {
   align-self: center;

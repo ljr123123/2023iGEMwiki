@@ -61,34 +61,19 @@
         :textContent="textContent11"
       >
       </TextWithImage>
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety2.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety3.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety4.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety5.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety6.jpg"
-        class="picture2"
-      />
-      <img
-        src="https://static.igem.wiki/teams/4627/wiki/safety7.jpg"
-        class="picture2"
-      />
+
+      <div class="flex_img_wrap">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety2.jpg" alt="">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety3.jpg" alt="">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety4.jpg" alt="">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety5.jpg" alt="">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety6.jpg" alt="">
+        <img src="https://static.igem.wiki/teams/4627/wiki/safety7.jpg" alt="">
+      </div>
 
       <TextWithImage
-        mainTitle="Human-practice"
-        aid="hp"
+        mainTitle="human-practices"
+        aid="IHP"
         :textContent="textContent12"
       >
       </TextWithImage>
@@ -172,12 +157,23 @@ const navigation = [
   "training",
   "project",
   "laboratory",
-  "hp",
-  "refrernce",
+  "IHP",
+  "reference",
 ];
 </script>
 
 <style scoped>
+.flex_img_wrap{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.flex_img_wrap img{
+  width: 49%;
+  margin-bottom: 20px;
+}
 .main {
   width: 100%;
   position: relative;

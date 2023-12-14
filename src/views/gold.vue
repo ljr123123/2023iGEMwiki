@@ -8,14 +8,17 @@
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage
         mainTitle="Best Integrated Human Practices"
+        aid="Practices"
         :textContent="textContent"
       ></TextWithImage>
       <TextWithImage
         mainTitle="Best New Basic Part"
+        aid="Basic"
         :textContent="textContent2"
       ></TextWithImage>
       <TextWithImage
         mainTitle="Best New Improved Part"
+        aid="Improved"
         :textContent="textContent3"
       ></TextWithImage>
     </content-decorate>

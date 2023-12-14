@@ -8,6 +8,7 @@
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
       main-title="OVERVIEW"
+      aid="OVERVIEW"
       :text-content="[
         'Our team tried to improve the thermostability of a new wild type enzyme, PEase(consist of Ceres and Demetra), and successfully improved its thermostability greatly. Since the increase of temperature has a promoting effect on the degradation of PE plastics, this study also provides a more efficient method for the degradation of PE plastics.',
         'This year, we designed 66 basic parts, including two wild-type PEase Ceres and Demetra. Firstly, we tested these two proteins separately, of which Demetra was tested with 7 different carrier and 3 different Strains. Luckily, Ceres was very successful after one trial expression.',
@@ -15,73 +16,29 @@
       ]"></text-with-image>
       <text-with-image
       main-title="Basic Parts"
+      aid="Basic Parts"
       :text-content="[
         'We tested Ceres and Demetra, and obtained good system of expression. The mutants in the Improved Part are designed according to the CDS of wild-type in the Basic Part. However, we only made a series of mutational improvements to Ceres due to time.'
       ]"></text-with-image>
       <tabel-com
-      :chart-data="[
-        
-        ['No.', 'Name', 'Description', 'Designer', 'Length(bp)', 'Improved Part'],
-        ['1', 'BBa_K4627002', 'Ceres', 'tjusls-china 2023', 2067, ''],
-        [2, 'BBa_K4627026', 'Demetra', 'tjusls-china 2023', 2097, ''],
-        [3, 'BBa_K4627005', 'A5-disulfide bonds', 'tjusls-china 2023', 2067, '√'],
-        ['4',	'BBa_K4627007',	'A7- disulfide bonds',	'tjusls-china 2023',	'2067',	'√'],
-        [5, 'BBa_K4627008', 'A8- disulfide bonds', 'tjusls-china 2023', '2067', '√'],
-        [6, 'BBa_K4627009', 'A9- disulfide bonds', 'tjusls-china 2023', '2067', '√'],
-        [7,'BBa_K4627011', 'A11- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [8, 'BBa_K4627012', 'A12- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [9, 'BBa_K4627014', 'A14- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [10, 'BBa_K4627015', 'A15- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [11, 'BBa_K4627017', 'A17- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [12, 'BBa_K4627018', 'B1- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [13, 'BBa_K4627019', 'B2- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [14, 'BBa_K4627023', 'B6- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [15, 'BBa_K4627024', 'B7- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [16, 'BBa_K4627026', 'B9- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [17, 'BBa_K4627027', 'B10- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [18, 'BBa_K4627029', 'B12- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [19, 'BBa_K4627031', 'B14- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [20, 'BBa_K4627032', 'B15- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [21, 'BBa_K4627033', 'B16- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [22, 'BBa_K4627035', 'B18- disulfide bonds', 'tjusls-china 2023', '2067','√'],
-        [23, 'BBa_K4627037', 'R2- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [24, 'BBa_K4627038', 'R3- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [25, 'BBa_K4627040', 'R5- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [26, 'BBa_K4627041', 'R6- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [27, 'BBa_K4627042', 'R7- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [28, 'BBa_K4627043', 'R8- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [29, 'BBa_K4627044', 'R9- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [30, 'BBa_K4627045', 'R10- Flexible site', 'tjusls-china 2023', '2067','√'],
-        [31, 'BBa_K4627048', 'zc-3- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
-        [32, 'BBa_K4627050', 'zc-5- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
-        [33, 'BBa_K4627052', 'zc-7- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
-        [34, 'BBa_K4627053', 'zc-8- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
-        [35, 'BBa_K4627054', 'zc-9- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
-        [36, 'BBa_K4627056', 'T2- combination of multiple methods', 'tjusls-china 2023', '2067','√'],
-        [37, 'BBa_K4627057', 'T3- combination of multiple methods', 'tjusls-china 2023', '2067','√']
-      ]"></tabel-com>
+      :chart-data="chart"></tabel-com>
       <text-with-image
       main-title="Part Collection"
+      aid="Collection"
       :text-content="[
         'Here are the five mutants that achieved the greatest improvement in thermostability, where thermostability increases by more than 7%.'
       ]"></text-with-image>
-      <tabel-com :chart-data="[
-        ['No.', 'Name', 'Description', 'Designer', 'Length(bp)'],
-        [1, 'BBa_K4627008', 'A8- disulfide bonds', 'tjusls-china 2023', '2067',],
-        [2, 'BBa_K4627053', 'zc-8- Hydrophobic center', 'tjusls-china 2023', '2067',],
-        [3, 'BBa_K4627044', 'R9- Flexible site', 'tjusls-china 2023', '2067',],
-        [4,'BBa_K4627026', 'B9- disulfide bonds', 'tjusls-china 2023', '2067',],
-        [5, 'BBa_K4627048', 'zc-3- Hydrophobic center', 'tjusls-china 2023', '2067',]
-      ]"></tabel-com>
-      <text-with-image
-      main-title="Building Enzyme Strategies to Tackle PE Pollution"></text-with-image>
-      <text-with-image
+      <tabel-com :chart-data="chart2"></tabel-com>
+      <!-- <text-with-image
+      main-title="Building Enzyme Strategies to Tackle PE Pollution"></text-with-image> -->
+      <!-- <text-with-image
       main-title="Overview"
+      aid="Overview"
       :text-content="[
         'Polyethylene (PE), a ubiquitous material in our lives, faces disposal challenges like landfilling or incineration. The public\'s limited understanding of biodegradation methods hinders scientists. Our Human Practice (HP) bridges this gap, sharing project info with students and society. Educational events from elementary to university levels and online presence, like the Begonia Festival and TikTok, engage diverse audiences in synthetic biology.',
         'Our Human Practice extends to interviews with alumni and professionals, shaping our project practically. Visits to hospitals and bio-pharmaceutical companies inform us of daily waste production and potential collaborations. This hands-on approach aligns our project with medical and industrial realities.',
         'Initiatives also include debates, fostering discussions on plastic\'s environmental impact. We\'ve created educational storybooks simplifying synthetic biology for younger audiences, blending creativity with science. Through these initiatives, we aim to advance scientific knowledge and ensure our innovations benefit society.'
-      ]"></text-with-image>
+      ]"></text-with-image> -->
     </content-decorate>
   </div>
 </template>
@@ -90,7 +47,55 @@
   import tabelCom from "@/components/table-com.vue"
   import textWithImage from "@/components/text-with-image.vue";
 import ContentDecorate from "@/components/content-decorate.vue";
-const navigation = [];
+const chart = [
+    ['No.', 'Name', 'Description', 'Designer', 'Length(bp)', 'Improved Part'],
+    ['1', `<a href="http://parts.igem.org/Part:BBa_K4627002" target="_blank">BBa_K4627002</a>`, 'Ceres', 'tjusls-china 2023', 2067, ''],
+    ['2', `<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">BBa_K4627026</a>`, 'Demetra', 'tjusls-china 2023', 2097, ''],
+    ['3', `<a href="http://parts.igem.org/Part:BBa_K4627005" target="_blank">BBa_K4627005</a>`, 'A5-disulfide bonds', 'tjusls-china 2023', 2067, ''],
+    ['4', `<a href="http://parts.igem.org/Part:BBa_K4627007" target="_blank">BBa_K4627007</a>`,	'A7- disulfide bonds',	'tjusls-china 2023',	'2067',	'√'],
+    ['5', `<a href="http://parts.igem.org/Part:BBa_K4627008" target="_blank">BBa_K4627008</a>`, 'A8- disulfide bonds', 'tjusls-china 2023', '2067', '√'],
+    ['6', `<a href="http://parts.igem.org/Part:BBa_K4627009" target="_blank">BBa_K4627009</a>`, 'A9- disulfide bonds', 'tjusls-china 2023', '2067', '√'],
+    ['7', `<a href="http://parts.igem.org/Part:BBa_K4627011" target="_blank">BBa_K4627011</a>`, 'A11- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['8', `<a href="http://parts.igem.org/Part:BBa_K4627012" target="_blank">BBa_K4627012</a>`, 'A12- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['9', `<a href="http://parts.igem.org/Part:BBa_K4627014" target="_blank">BBa_K4627014</a>`, 'A14- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['10', `<a href="http://parts.igem.org/Part:BBa_K4627015" target="_blank">BBa_K4627015</a>`, 'A15- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['11', `<a href="http://parts.igem.org/Part:BBa_K4627017" target="_blank">BBa_K4627017</a>`, 'A17- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['12', `<a href="http://parts.igem.org/Part:BBa_K4627018" target="_blank">BBa_K4627018</a>`, 'B1- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['13', `<a href="http://parts.igem.org/Part:BBa_K4627019" target="_blank">BBa_K4627019</a>`, 'B2- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['14', `<a href="http://parts.igem.org/Part:BBa_K4627023" target="_blank">BBa_K4627023</a>`, 'B6- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['15', `<a href="http://parts.igem.org/Part:BBa_K4627024" target="_blank">BBa_K4627024</a>`, 'B7- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['16', `<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">BBa_K4627026</a>`, 'B9- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['17', `<a href="http://parts.igem.org/Part:BBa_K4627027" target="_blank">BBa_K4627027</a>`, 'B10- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['18', `<a href="http://parts.igem.org/Part:BBa_K4627029" target="_blank">BBa_K4627029</a>`, 'B12- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['19', `<a href="http://parts.igem.org/Part:BBa_K4627031" target="_blank">BBa_K4627031</a>`, 'B14- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['20', `<a href="http://parts.igem.org/Part:BBa_K4627032" target="_blank">BBa_K4627032</a>`, 'B15- disulfide bonds', 'tjusls-china 2023', '2067',''],
+    ['21', `<a href="http://parts.igem.org/Part:BBa_K4627033" target="_blank">BBa_K4627033</a>`, 'B16- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['22', `<a href="http://parts.igem.org/Part:BBa_K4627035" target="_blank">BBa_K4627035</a>`, 'B18- disulfide bonds', 'tjusls-china 2023', '2067','√'],
+    ['23', `<a href="http://parts.igem.org/Part:BBa_K4627037" target="_blank">BBa_K4627037</a>`, 'R2- Flexible site', 'tjusls-china 2023', '2067',''],
+    ['24', `<a href="http://parts.igem.org/Part:BBa_K4627038" target="_blank">BBa_K4627038</a>`, 'R3- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['25', `<a href="http://parts.igem.org/Part:BBa_K4627040" target="_blank">BBa_K4627040</a>`, 'R5- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['26', `<a href="http://parts.igem.org/Part:BBa_K4627041" target="_blank">BBa_K4627041</a>`, 'R6- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['27', `<a href="http://parts.igem.org/Part:BBa_K4627042" target="_blank">BBa_K4627042</a>`, 'R7- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['28', `<a href="http://parts.igem.org/Part:BBa_K4627043" target="_blank">BBa_K4627043</a>`, 'R8- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['29', `<a href="http://parts.igem.org/Part:BBa_K4627044" target="_blank">BBa_K4627044</a>`, 'R9- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['30', `<a href="http://parts.igem.org/Part:BBa_K4627045" target="_blank">BBa_K4627045</a>`, 'R10- Flexible site', 'tjusls-china 2023', '2067','√'],
+    ['31', `<a href="http://parts.igem.org/Part:BBa_K4627048" target="_blank">BBa_K4627048</a>`, 'zc-3- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
+    ['32', `<a href="http://parts.igem.org/Part:BBa_K4627050" target="_blank">BBa_K4627050</a>`, 'zc-5- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
+    ['33', `<a href="http://parts.igem.org/Part:BBa_K4627052" target="_blank">BBa_K4627052</a>`, 'zc-7- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
+    ['34', `<a href="http://parts.igem.org/Part:BBa_K4627053" target="_blank">BBa_K4627053</a>`, 'zc-8- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
+    ['35', `<a href="http://parts.igem.org/Part:BBa_K4627054" target="_blank">BBa_K4627054</a>`, 'zc-9- Hydrophobic center', 'tjusls-china 2023', '2067','√'],
+    ['36', `<a href="http://parts.igem.org/Part:BBa_K4627056" target="_blank">BBa_K4627056</a>`, 'T2- combination of multiple methods', 'tjusls-china 2023', '2067','√'],
+    ['37', `<a href="http://parts.igem.org/Part:BBa_K4627057" target="_blank">BBa_K4627057</a>`, 'T3- combination of multiple methods', 'tjusls-china 2023', '2067','√']
+];
+const chart2 = [
+  ['No.', 'Name', 'Description', 'Designer', 'Length(bp)'],
+  [1, `<a href="http://parts.igem.org/Part:BBa_K4627008" target="_blank">BBa_K4627008</a>`, 'A8- disulfide bonds', 'tjusls-china 2023', '2067',],
+  [2, `<a href="http://parts.igem.org/Part:BBa_K4627053" target="_blank">BBa_K4627053</a>`, 'zc-8- Hydrophobic center', 'tjusls-china 2023', '2067',],
+  [3, `<a href="http://parts.igem.org/Part:BBa_K4627044" target="_blank">BBa_K4627044</a>`, 'R9- Flexible site', 'tjusls-china 2023', '2067',],
+  [4, `<a href="http://parts.igem.org/Part:BBa_K4627026" target="_blank">BBa_K4627026</a>`, 'B9- disulfide bonds', 'tjusls-china 2023', '2067',],
+  [5, `<a href="http://parts.igem.org/Part:BBa_K4627048" target="_blank">BBa_K4627048</a>`, 'zc-3- Hydrophobic center', 'tjusls-china 2023', '2067',]
+]
+const navigation = ['OVERVIEW', 'Basic Parts', 'Collection'];
 </script>
   
 <style scoped>

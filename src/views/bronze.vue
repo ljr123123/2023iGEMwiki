@@ -7,37 +7,62 @@
     <div class="page-title">Bronze</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <text-with-image
-      main-title="Bronze"
-      sub-title="Wiki"
-      :text-content="['We have or will meet all deliverables on the Competition Deliverables page. Please visit our Home page and Judging Form page for more details.']"
+        main-title="Bronze"
+        aid="Bronze"
+        sub-title="Wiki"
       ></text-with-image>
+      <p class="simple-text">
+        We have or will meet all deliverables on the Competition Deliverables
+        page. Please visit our <router-link to="/">Home page</router-link> and
+        Judging Form page for more details.
+      </p>
       <text-with-image
-      sub-title="Promotion video"
-      :text-content="['We finished our project and we hope you can learn about it by our promotion video.']"></text-with-image>
+        sub-title="Promotion video"
+        :text-content="[
+          'We finished our project and we hope you can learn about it by our promotion video.',
+        ]"
+      ></text-with-image>
+
+      <video
+        src="https://video.igem.org/videos/embed/bb26bc7f-9f77-4262-9168-e3ac3c4dfc34?subtitle=en"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="home-top-image"
+        style="display: block; width: 80%; margin: 0 auto"
+      />
+
+      <text-with-image sub-title="Attribution"></text-with-image>
+
+      <p class="simple-text">
+        Our team was established at Jan 10th, consisting of 18 Tianjin
+        University students from different majors, leaded by two PIs and two
+        instructors. Besides, we have some sponsors and supporters. Here is our
+        <router-link to="/attributions">attribution form</router-link>.
+      </p>
+
       <text-with-image
-      sub-title="Attribution"
-      :text-content="[
-        'Our team was established at Jan 10th, consisting of 18 Tianjin University students from different majors, leaded by two PIs and two instructors. Besides, we have some sponsors and supporters. Here is our attribution form.'
-      ]"></text-with-image>
-      <text-with-image
-      sub-title="Description"
-      :text-content="[
-        'Our project is about the optimization of PEase. PEase is the only enzyme found to degrade PE, which has the ability to oxidize PE at room temperature and effectively solves the problem of oxidation. we managed to improve protein thermostability by designing disulfide bonds, flexible sites, salt bridges, and hydrophobic cores. And our project may lay the foundation for achieving joint action of various plastic degrading enzymes. Here is our project description. '
-      ]"></text-with-image>
-      <text-with-image
-      sub-title="contribution"
-      :text-content="[
-        'Since PEase is a newly discovered enzyme, there will be many new experiences in the research process. And that will be the contribution we leave to future researchers and new teams. Here is our project contribution. '
-      ]"></text-with-image>
+        sub-title="Description"
+        :text-content="[
+          'Our project is about the optimization of PEase. PEase is the only enzyme found to degrade PE, which has the ability to oxidize PE at room temperature and effectively solves the problem of oxidation. we managed to improve protein thermostability by designing disulfide bonds, flexible sites, salt bridges, and hydrophobic cores. And our project may lay the foundation for achieving joint action of various plastic degrading enzymes. Here is our project description. ',
+        ]"
+      ></text-with-image>
+      <text-with-image sub-title="contribution"></text-with-image>
+      <p class="simple-text">
+        Since PEase is a newly discovered enzyme, there will be many new
+        experiences in the research process. And that will be the contribution
+        we leave to future researchers and new teams. Here is our
+        <router-link to="/description">project contribution</router-link>.
+      </p>
     </content-decorate>
   </div>
 </template>
 
 <script setup>
-import TextWithImage from "@/components/text-with-image.vue"
-import ContentDecorate from "@/components/content-decorate.vue"
-const navigation = [
-]
+import TextWithImage from "@/components/text-with-image.vue";
+import ContentDecorate from "@/components/content-decorate.vue";
+const navigation = [];
 </script>
   
 <style scoped>

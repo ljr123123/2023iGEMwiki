@@ -7,7 +7,7 @@
     <div class="page-title">Contribution</div>
     <content-decorate style="margin-top: -20vh" :navigation="navigation">
       <TextWithImage mainTitle="OVERVIEW" 
-      aid="ovreview"
+      aid="overview"
       :textContent="textContent1">
       </TextWithImage>
       <TextWithImage mainTitle="PARTS" 
@@ -48,10 +48,8 @@
       ></TextWithImage>
       <TextWithImage
         subTitle="8. Temperature factor design (flexible area)[4] :"
-        :textContent="[
-          'The thermostability of some mutants can be significantly improved after mutating amino acids with high B-factor value in protein structure. (This method has also been used in this project. See the design section for details.)',
-        ]"
       ></TextWithImage>
+      <p class="simple-text">The thermostability of some mutants can be significantly improved after mutating amino acids with high B-factor value in protein structure. (This method has also been used in this project. See the design section for <router-link to="/design">details</router-link> details.)</p>
       <TextWithImage
         subTitle="9. Machine Learning[5]:"
         :textContent="[
@@ -61,10 +59,8 @@
       <TextWithImage
         mainTitle="WET LAB"
         aid="wet-lab"
-        :textContent="[
-          'When do PEase D protein test, we tried to jointly use thermal cracking method and ultrasonic cracking method for bacteria-breaking operation, and found that the combined use of the two methods had better bacteria-breaking effect, which could more completely separate the superculture and precipitation, and determine the protein expression more clearly. If these bacteria only pyrolyzed without ultrasonic treatment, it is easy to form DNA protein complex, resulting in fuzzy and unclear strips of protein gel, it is difficult to distinguish whether there is the protein we need. We have determined the best treatment conditions through continuous experiments, which can achieve the best effect. (See the experience page for details. )',
-        ]"
       ></TextWithImage>
+      <p class="simple-text">When do PEase D protein test, we tried to jointly use thermal cracking method and ultrasonic cracking method for bacteria-breaking operation, and found that the combined use of the two methods had better bacteria-breaking effect, which could more completely separate the superculture and precipitation, and determine the protein expression more clearly. If these bacteria only pyrolyzed without ultrasonic treatment, it is easy to form DNA protein complex, resulting in fuzzy and unclear strips of protein gel, it is difficult to distinguish whether there is the protein we need. We have determined the best treatment conditions through continuous experiments, which can achieve the best effect. (See the <router-link to="/experiments">experiment</router-link> page for details. )</p>
       <text-with-image
         :imageUrls="['https://static.igem.wiki/teams/4627/wiki/sds-page.png']"
       ></text-with-image>
@@ -81,9 +77,10 @@
       <text-with-image
         :textContent="[
           'In addition, we will also upload the presentation for primary school students, hoping to provide our creativity for similar activities in the future.',
-          'We hope these will remain in the iGEM archive, ready for iGEMer to download if they want to try it out. (See the communication page for details. ）',
+          'We hope these will remain in the iGEM archive, ready for iGEMer to download if they want to try it out. ',
         ]"
       ></text-with-image>
+      <router-link to="/communication">(See the communication page for details. )</router-link>
       <text-with-image
         mainTitle="REFERENCE"
         aid="reference"
@@ -133,8 +130,8 @@ const textContent8 = [
 const navigation = [
   "overview",
   "parts",
-  "drylab",
-  "wetlab",
+  "dry-lab",
+  "wet-lab",
   "reference"
 ]
 </script>

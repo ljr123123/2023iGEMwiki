@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import contributionView from "../views/ContributionView.vue";
 import descriptionView from "../views/DescriptionView.vue";
@@ -166,13 +166,21 @@ const routes = [{
         },
     },
     {
-        path: "/human-practice",
+        path: "/human-practices",
         component: () =>
-            import ("@/views/human-practice.vue"),
+            import ("@/views/human-practices.vue"),
         meta: {
             title: "Human Practice",
         },
     },
+    // {
+    //     path: "/best-human-practices",
+    //     component: () =>
+    //         import ("@/views/human-practices-best.vue"),
+    //     meta: {
+    //         title: "Best Human Practice",
+    //     },
+    // },
     {
         path: "/communication",
         component: () =>
@@ -248,7 +256,7 @@ const routes = [{
 ];
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHashHistory(),
     scrollBehavior: () => ({ top: 0 }),
     routes,
 });

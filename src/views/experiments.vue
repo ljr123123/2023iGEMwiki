@@ -78,7 +78,7 @@ const navigation = [
 
 iframe {
   height: 100vh;
-  width: 60vw;
+  width: 100%;
 }
 .page-title {
   position: absolute;
